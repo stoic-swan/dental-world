@@ -197,7 +197,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'PAIN RELIEF. TOOTH SAVING CARE.',
     subtitle: 'Painless. Precise. Permanent.',
     techStat: 'Advanced Rotary RCT',
-    heroImage: '/images/new images/Treatments Theme Images/Root Canal Treatment.png',
+    heroImage: '/images/treatments/root-canal-treatment.png',
     features: [
       { title: 'Pain Relief', desc: 'Painless treatment with anesthesia' },
       { title: 'Save Natural Tooth', desc: 'Keep your original tooth for life' },
@@ -252,7 +252,8 @@ const treatmentsInfo: Record<string, {
       { title: 'Experienced Endodontists', desc: 'Specialist care' },
       { title: 'High Success Rate', desc: '98%+ success rate' }
     ],
-    beforeAfterImage: '/images/new images/Root Canal Before & after.jpeg',
+    beforeAfterImage: '/images/aug2026/rct_before_after_hd.png',
+    costImage: '/images/treatments/root-canal-treatment.png',
     testimonialText: 'I had severe tooth pain and was afraid of RCT. But the treatment at Dental World was completely painless. Excellent care!',
     testimonialAuthor: 'Ramesh, Pragathi Nagar',
     faqs: [
@@ -268,7 +269,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'PERMANENT TOOTH REPLACEMENT. NATURAL FEEL.',
     subtitle: 'Strong. Natural. Lifelong.',
     techStat: '3D Guided Implants',
-    heroImage: '/images/new images/Treatments Theme Images/Dental Implants.png',
+    heroImage: '/images/treatments/dental-implants.png',
     features: [
       { title: '100% Biocompatible', desc: 'Medical-grade titanium fuses with bone' },
       { title: 'Restore Biting Force', desc: 'Chew your favorite foods easily' },
@@ -324,7 +325,7 @@ const treatmentsInfo: Record<string, {
       { title: 'High Success Rate', desc: '98%+ success rate' }
     ],
     beforeAfterImage: '/images/before and after/dental_implant_before_after.png',
-    costImage: '/images/new images/Treatments Theme Images/Dental Implants.png',
+    costImage: '/images/treatments/dental-implants.png',
     testimonialText: 'I replaced my missing front tooth with an implant at Dental World. The new tooth looks and feels exactly like my natural teeth!',
     testimonialAuthor: 'Sunitha Rao, Bachupally',
     faqs: [
@@ -337,7 +338,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'SMILE ALIGNMENT. PERFECT BITE.',
     subtitle: 'Aligned. Healthy. Confident.',
     techStat: 'Orthodontic Specialist Care',
-    heroImage: '/images/braces/braces_treatment_hero.png',
+    heroImage: '/images/treatments/dental-braces.png',
     features: [
       { title: 'Perfect Alignment', desc: 'Crooked / crowded teeth correction' },
       { title: 'Bite Correction', desc: 'Resolves overbites, underbites, & crossbites' },
@@ -392,8 +393,8 @@ const treatmentsInfo: Record<string, {
       { title: 'Comfort-First Materials', desc: 'Minimal tissue irritation' },
       { title: 'Complete Retainer Guidance', desc: 'Locks in your perfect smile' }
     ],
-    beforeAfterImage: '/images/before and after/Dental Braces before and after.jpeg',
-    costImage: '/images/braces/icons (3).png',
+    beforeAfterImage: '/images/aug2026/braces_before_after_hd.png',
+    costImage: '/images/treatments/dental-braces.png',
     testimonialText: 'My teeth are perfectly aligned now! The team made the braces journey so easy and comfortable.',
     testimonialAuthor: 'Rahul M., Pragathi Nagar',
     faqs: [
@@ -434,7 +435,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'DISCREET ALIGNMENT. INVISIBLE BRACES.',
     subtitle: 'Clear. Removable. Comfortable.',
     techStat: 'Invisalign Certified Provider',
-    heroImage: '/images/new images/Treatments Theme Images/Clear Aligners.png',
+    heroImage: '/images/treatments/clear-aligners.png',
     features: [
       { title: 'Virtually Invisible', desc: 'Clear plastic aligners are unnoticeable' },
       { title: '100% Removable', desc: 'Take them out to eat, brush, and floss' },
@@ -490,7 +491,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Predictable Outcomes', desc: 'See your final smile first' }
     ],
     beforeAfterImage: '/images/before and after/Invisalign Before-After.png',
-    costImage: '/images/new images/Treatments Theme Images/Clear Aligners.png',
+    costImage: '/images/treatments/clear-aligners.png',
     testimonialText: 'Clear aligners were so comfortable and virtually invisible. Nobody even knew I was undergoing orthodontic treatment!',
     testimonialAuthor: 'Meghana P., Pragathi Nagar',
     faqs: [
@@ -503,7 +504,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'SMILE TRANSFORMATIONS. BRAND NEW CONFIDENCE.',
     subtitle: 'Custom. Radiant. Beautiful.',
     techStat: 'Digital Smile Design',
-    heroImage: '/images/new images/Treatments Theme Images/Smile Designing.png',
+    heroImage: '/images/treatments/smile-designing.png',
     features: [
       { title: 'Personalized Makeover', desc: 'Designed to fit your unique facial features' },
       { title: 'Correct Multi-Flaws', desc: 'Fixes gaps, chips, stains, and crooked teeth' },
@@ -559,7 +560,7 @@ const treatmentsInfo: Record<string, {
       { title: 'High Success Rate', desc: '100% patient satisfaction' }
     ],
     beforeAfterImage: '/images/before and after/Smile Designing before and after.jpeg',
-    costImage: '/images/new images/Treatments Theme Images/Smile Designing.png',
+    costImage: '/images/treatments/smile-designing.png',
     testimonialText: 'I can\'t stop smiling! The veneers look incredibly natural and have given me so much confidence.',
     testimonialAuthor: 'Karan D., Bachupally',
     faqs: [
@@ -764,7 +765,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'COMPLETE RESTORATION. LIFE CHANGING CARE.',
     subtitle: 'Functional. Aesthetic. Complete.',
     techStat: 'Full-Arch Rehabilitation Specialist',
-    heroImage: '/images/new images/Treatments Theme Images/Hybrid-Full Mouth Denture.png',
+    heroImage: '/images/treatments/hybrid-full-mouth-denture.png',
     features: [
       { title: 'Complete Smile Restoration', desc: 'Rebuilds all upper and lower teeth' },
       { title: 'Correct Bite Alignment', desc: 'Relieves chronic jaw and TMJ strain' },
@@ -820,7 +821,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Lifetime Smile Support', desc: 'Peace of mind warranty' }
     ],
     beforeAfterImage: '/images/before and after/Dentures before and after.jpeg',
-    costImage: '/images/new images/Treatments Theme Images/Hybrid-Full Mouth Denture.png',
+    costImage: '/images/treatments/hybrid-full-mouth-denture.png',
     testimonialText: 'After years of suffering, I can finally eat normally and smile with confidence again. The team changed my life.',
     testimonialAuthor: 'Rajendra Reddy, Bachupally',
     faqs: [
@@ -833,7 +834,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'INSTANT SMILE BRIGHTENING. SHINE BRIGHT.',
     subtitle: 'Bright. Fast. Painless.',
     techStat: 'Advanced Laser Whitening',
-    heroImage: '/images/new images/Treatments Theme Images/Teeth Whitening.png',
+    heroImage: '/images/treatments/teeth-whitening.png',
     features: [
       { title: 'Up to 8 Shades Brighter', desc: 'Instant results in just one sitting' },
       { title: 'Safe for Enamel', desc: 'Does not damage tooth structure' },
@@ -889,7 +890,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Sensitivity Relief Gel', desc: 'Painless post-treatment care' }
     ],
     beforeAfterImage: '/images/before and after/Teeth Whitening before after.jpeg',
-    costImage: '/images/new images/Treatments Theme Images/Teeth Whitening.png',
+    costImage: '/images/treatments/teeth-whitening.png',
     testimonialText: 'My teeth are so much brighter now! The Zoom whitening session took less than an hour and was completely painless.',
     testimonialAuthor: 'Karthik, Pragathi Nagar',
     faqs: [
@@ -902,7 +903,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'CLEAN TEETH. HEALTHY GUMS.',
     subtitle: 'Fresh. Bright. Disease-Free.',
     techStat: 'Ultrasonic Scalers & Polishing',
-    heroImage: '/images/new images/Treatments Theme Images/Teeth Scaling-cleaning.png',
+    heroImage: '/images/treatments/teeth-scaling-cleaning.png',
     features: [
       { title: 'Plaque Removal', desc: 'Removes soft bacterial plaque' },
       { title: 'Calculus Cleansing', desc: 'Scales off hard tartar deposits' },
@@ -949,7 +950,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Comfortable Setting', desc: 'Minimal discomfort or sensitivity' }
     ],
     beforeAfterImage: '/images/before and after/Teeth Scaling_Cleaning before after.jpeg',
-    costImage: '/images/new images/Treatments Theme Images/Teeth Scaling-cleaning.png',
+    costImage: '/images/treatments/teeth-scaling-cleaning.png',
     testimonialText: 'My teeth feel incredibly clean and my bleeding gum issue resolved completely in a single sitting.',
     testimonialAuthor: 'Suresh P., Pragathi Nagar',
     faqs: [
@@ -961,7 +962,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'PAINLESS EXTRACTION. JAW RELIEF.',
     subtitle: 'Gentle. Fast. Safe.',
     techStat: 'Oral Surgery Specialist',
-    heroImage: '/images/new images/Treatments Theme Images/Wisdom tooth Extraction.png',
+    heroImage: '/images/treatments/wisdom-tooth-extraction.png',
     features: [
       { title: 'Painless Procedure', desc: 'Effective local anesthesia' },
       { title: 'Prevent Crowding', desc: 'Stops teeth from shifting' },
@@ -1005,7 +1006,8 @@ const treatmentsInfo: Record<string, {
       { title: 'Advanced Anaesthetic Solutions', desc: 'Completely painless' },
       { title: 'Sterile Operating Environment', desc: 'Zero infection risk' }
     ],
-    costImage: '/images/new images/Treatments Theme Images/Wisdom tooth Extraction.png',
+    beforeAfterImage: '/images/aug2026/wisdom_tooth_before_after_hd.png',
+    costImage: '/images/aug2026/icons/advanced_anesthetic.png',
     testimonialText: 'The extraction of my impacted tooth took only 20 minutes and I had very minimal post-op swelling.',
     testimonialAuthor: 'Naveen K., Pragathi Nagar',
     faqs: [
@@ -1070,7 +1072,7 @@ const treatmentsInfo: Record<string, {
       { question: 'Do gums grow back after recession?', answer: 'Gums do not grow back naturally, but gum graft surgeries or laser stimulation can help cover exposed roots.' }
     ],
     bannerBelowHero: '/images/gum diseases/Gum disease hero 2.png',
-    costImage: '/images/gum diseases/Dental_icon_maintenance_aftercare_202606211648.jpeg',
+    costImage: '/images/aug2026/icons/swollen_gums.jpeg',
     visualProcedures: [
       {
         title: 'Gum Disease Diagnosis Infographic',
@@ -1113,7 +1115,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'PREVENT CAVITIES. RESTORE STRENGTH.',
     subtitle: 'Tooth-Colored. Mercury-Free. Invisible.',
     techStat: 'Composite Restorations',
-    heroImage: '/images/new images/Treatments Theme Images/Tooth Decay and Fillings.png',
+    heroImage: '/images/treatments/tooth-decay-and-fillings.png',
     features: [
       { title: 'Natural Shade Match', desc: 'Blends with natural teeth' },
       { title: 'Mercury-Free Safety', desc: 'Safe composite resins' },
@@ -1159,7 +1161,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Japanese Dental Composites', desc: 'Highest wear-resistance' },
       { title: 'Painless Quick Prep', desc: 'Done in under 20 minutes' }
     ],
-    costImage: '/images/new images/Treatments Theme Images/Tooth Decay and Fillings.png',
+    costImage: '/images/aug2026/icons/cavity_prevention.jpeg',
     testimonialText: 'The filling is completely invisible. I cannot even tell which tooth had the cavity!',
     testimonialAuthor: 'Swathi T., Pragathi Nagar',
     faqs: [
@@ -1171,7 +1173,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'RESTORE FULL CHEWING. NO SLIPPING.',
     subtitle: 'Fixed Implant Dentures. BPS Acrylic.',
     techStat: 'All-on-4 Implant Prosthetics',
-    heroImage: '/images/new images/Treatments Theme Images/Hybrid-Full Mouth Denture.png',
+    heroImage: '/images/aug2026/dentures_hero_couple.png',
     features: [
       { title: 'Secure Implant Fit', desc: 'Zero slipping or falling out' },
       { title: 'Youthful Smile Restored', desc: 'Fills facial hollows' },
@@ -1218,7 +1220,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Custom Facial Contouring', desc: 'Restores youthfulness' }
     ],
     beforeAfterImage: '/images/before and after/Dentures before and after.jpeg',
-    costImage: '/images/new images/Treatments Theme Images/Hybrid-Full Mouth Denture.png',
+    costImage: '/images/treatments/hybrid-full-mouth-denture.png',
     testimonialText: 'I can eat nuts and apples again without worrying about my teeth moving. Truly life changing!',
     testimonialAuthor: 'Ramarao Y., Pragathi Nagar',
     faqs: [
@@ -1230,7 +1232,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'FRESH BREATH. MORE CONFIDENCE.',
     subtitle: 'Bacteria elimination. Salivary Care.',
     techStat: 'Oral Microbiome Cleanse',
-    heroImage: '/images/new images/Treatments Theme Images/Bad Breath.png',
+    heroImage: '/images/treatments/bad-breath.png',
     features: [
       { title: 'Deep Gum Sanitization', desc: 'Removes deep bacteria pockets' },
       { title: 'Salivary Flow Check', desc: 'Addresses dry mouth issues' },
@@ -1274,7 +1276,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Periodontist Evaluation', desc: 'Check for hidden gum pockets' },
       { title: 'Custom Home-care Regimen', desc: 'Keeps breath fresh daily' }
     ],
-    costImage: '/images/new images/Treatments Theme Images/Bad Breath.png',
+    costImage: '/images/treatments/bad-breath.png',
     testimonialText: 'The treatment solved my chronic bad breath issue. Brushing and mouthwash never did the trick.',
     testimonialAuthor: 'Prasad G., Pragathi Nagar',
     faqs: [
@@ -1286,7 +1288,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'REBUILD SHAPE. FILL THE GAPS.',
     subtitle: 'High Strength Zirconia. Premium E-max.',
     techStat: 'CAD/CAM Digital Milling',
-    heroImage: '/images/new images/Treatments Theme Images/Dental Crown & Bridge.png',
+    heroImage: '/images/treatments/dental-crown-bridge.png',
     features: [
       { title: 'Tooth Protection', desc: 'Strengthens weak or cracked teeth' },
       { title: 'Restore Chew Function', desc: 'Replaces missing teeth' },
@@ -1333,7 +1335,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Long-term Warranties', desc: 'Up to 15 years on Zirconia' }
     ],
     beforeAfterImage: '/images/before and after/Dental Crown  before and after.jpeg',
-    costImage: '/images/new images/Treatments Theme Images/Dental Crown & Bridge.png',
+    costImage: '/images/treatments/dental-crown-bridge.png',
     testimonialText: 'The crown matches my adjacent teeth so perfectly that no one can tell it is artificial.',
     testimonialAuthor: 'Madhavi L., Pragathi Nagar',
     faqs: [
@@ -1345,7 +1347,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'LASER REVISION. PAINLESS RELEASE.',
     subtitle: 'Suture-free. Bloodless. Safe.',
     techStat: 'WaterLase Soft-Tissue Laser',
-    heroImage: '/images/new images/Treatments Theme Images/Frenectomy.png',
+    heroImage: '/images/treatments/frenectomy.png',
     features: [
       { title: 'Painless Laser Cut', desc: 'No surgical scalpels used' },
       { title: 'Suture-free Healing', desc: 'No stitches to remove' },
@@ -1390,7 +1392,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Instant Mobilty', desc: 'Immediate movement results' }
     ],
     beforeAfterImage: '/images/before and after/Freenectomy before and after.jpeg',
-    costImage: '/images/new images/Treatments Theme Images/Frenectomy.png',
+    costImage: '/images/treatments/frenectomy.png',
     testimonialText: 'My son had tongue-tie and couldn\'t speak clearly. The laser treatment took 5 minutes and his speech improved immediately!',
     testimonialAuthor: 'Sujatha (Mother of Hemanth), Pragathi Nagar',
     faqs: [
@@ -1402,7 +1404,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'BEAUTIFY YOUR SMILE. PERFECT SHAPES.',
     subtitle: 'Composite Veneers. Gum Depigmentation. Contouring.',
     techStat: 'Aesthetic Dental Artistry',
-    heroImage: '/images/new images/Treatments Theme Images/Cosmetic Dentistry.png',
+    heroImage: '/images/treatments/cosmetic-dentistry.png',
     features: [
       { title: 'Close Front Gaps', desc: 'Painless diastema closure' },
       { title: 'Reshape Uneven Teeth', desc: 'Cosmetic contouring & bonding' },
@@ -1448,7 +1450,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Cosmetic Dental Masters', desc: 'Artistic smile modifications' }
     ],
     beforeAfterImage: '/images/before and after/Smile Designing before and after.jpeg',
-    costImage: '/images/new images/Treatments Theme Images/Cosmetic Dentistry.png',
+    costImage: '/images/treatments/cosmetic-dentistry.png',
     testimonialText: 'The gap between my front teeth is gone! The composite bonding is absolutely invisible.',
     testimonialAuthor: 'Ria S., Pragathi Nagar',
     faqs: [
@@ -1460,7 +1462,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'NO DRILL. NO SCALPEL. PAINLESS CLINIC.',
     subtitle: 'Minimally Invasive. Bloodless Healing.',
     techStat: 'FDA-Approved Hard & Soft Tissue Lasers',
-    heroImage: '/images/new images/Treatments Theme Images/Laser Dentistry.png',
+    heroImage: '/images/treatments/laser-dentistry.png',
     features: [
       { title: 'No Drilling Vibration', desc: 'More comfortable cavity prep' },
       { title: 'Reduced Needle Needs', desc: 'Lesser local anesthesia needed' },
@@ -1504,7 +1506,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Certified Laser Specialists', desc: 'Precision wave safety' },
       { title: 'Ultra-Comfortable Rooms', desc: 'Relaxing environment' }
     ],
-    costImage: '/images/new images/Treatments Theme Images/Laser Dentistry.png',
+    costImage: '/images/treatments/laser-dentistry.png',
     testimonialText: 'I felt no vibration and heard no drill sound! Laser fillings are a game changer.',
     testimonialAuthor: 'Abhinav D., Pragathi Nagar',
     faqs: [
@@ -1516,7 +1518,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'CORRECT SKELETAL BITE. FACIAL BALANCE.',
     subtitle: 'Orthognathic Surgery. 3D Surgical Guide.',
     techStat: 'Maxillofacial Skeletal Alignment',
-    heroImage: '/images/new images/Treatments Theme Images/Jaw Surgery.png',
+    heroImage: '/images/treatments/jaw-surgery.png',
     features: [
       { title: 'Align Jaw Asymmetry', desc: 'Creates balanced facial lines' },
       { title: 'Resolve Severe Bite Issues', desc: 'Corrects underbites and overbites' },
@@ -1562,7 +1564,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Integrated Ortho-Surgical Care', desc: 'Seamless coordination' }
     ],
     beforeAfterImage: '/images/aug2026/jaw_surgery_orthognathic_infographic.png',
-    costImage: '/images/new images/Treatments Theme Images/Jaw Surgery.png',
+    costImage: '/images/aug2026/icons/oral_maxillofacial_surgeon.png',
     testimonialText: 'The surgery completely aligned my jaw profile and cured my chronic TMJ joint headaches.',
     testimonialAuthor: 'Deepak R., Pragathi Nagar',
     faqs: [
@@ -1574,7 +1576,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'REFINE CHIN PROFILE. RESTORE SYMMETRY.',
     subtitle: 'Surgical Chin Correction. No External Scars.',
     techStat: 'Precision Chin Osteotomy',
-    heroImage: '/images/new images/Treatments Theme Images/Genoplasty.png',
+    heroImage: '/images/treatments/genioplasty.png',
     features: [
       { title: 'Correct Weak Chin', desc: 'Advancement to define jawline' },
       { title: 'Reduce Protruding Chin', desc: 'Recession to soften profile' },
@@ -1619,7 +1621,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Complete Post-op Comfort Care', desc: 'Smooth recovery guides' }
     ],
     beforeAfterImage: '/images/before and after/Genioplasty before and after.jpeg',
-    costImage: '/images/new images/Treatments Theme Images/Genoplasty.png',
+    costImage: '/images/treatments/genioplasty.png',
     testimonialText: 'My profile looks incredibly balanced now. The weak chin was corrected permanently.',
     testimonialAuthor: 'Sanjana P., Pragathi Nagar',
     faqs: [
@@ -1631,7 +1633,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'INSTANT ULCER PAIN RELIEF & ORAL LESION SCREENING.',
     subtitle: 'Laser Photobiomodulation. Biopsy & Non-Healing Ulcer Care.',
     techStat: 'Soft-Tissue Laser & Histopathology',
-    heroImage: '/images/new images/Treatments Theme Images/Mouth Ulcers.png',
+    heroImage: '/images/treatments/mouth-ulcers.png',
     features: [
       { title: 'Instant Pain Block', desc: 'Numbs ulcer nerves in 60 seconds with diode laser' },
       { title: 'Accelerated Healing', desc: 'Photobiomodulation cuts healing time by 70%' },
@@ -1678,7 +1680,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Advanced Diode Laser System', desc: 'Non-contact, painless healing stimulation' },
       { title: 'Certified Histopathology Tie-ups', desc: 'Prompt and accurate biopsy reports' }
     ],
-    costImage: '/images/new images/Treatments Theme Images/Mouth Ulcers.png',
+    costImage: '/images/treatments/mouth-ulcers.png',
     testimonialText: 'I had an ulcer on the side of my tongue that wouldn\'t heal for 3 weeks. Dr. Sneha and the team did a laser treatment and a biopsy that gave me total clarity and peace of mind.',
     testimonialAuthor: 'Divya K., Pragathi Nagar',
     faqs: [
@@ -1692,7 +1694,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'SHIELD YOUR ENAMEL. BLOCK CAVITIES.',
     subtitle: 'Pit & Fissure Sealants. Fluoride Varnish.',
     techStat: 'Proactive Enamel Protection',
-    heroImage: '/images/new images/Treatments Theme Images/Preventive Dentistry.png',
+    heroImage: '/images/treatments/preventive-dentistry.png',
     features: [
       { title: 'Fluoride Enamel Shield', desc: 'Re-mineralizes weak enamel spots' },
       { title: 'Pit & Fissure Sealants', desc: 'Coats deep molar grooves' },
@@ -1738,7 +1740,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Custom Nightguards Milling', desc: 'Ideal jaw joint fits' }
     ],
     beforeAfterImage: '/images/before and after/Teeth Scaling_Cleaning before after.jpeg',
-    costImage: '/images/new images/Treatments Theme Images/Preventive Dentistry.png',
+    costImage: '/images/aug2026/icons/routine_dental_checkup.jpeg',
     testimonialText: 'My daughter got sealants done for her back teeth. It has kept them cavity-free for years!',
     testimonialAuthor: 'Arjun S. (Father of Ria), Pragathi Nagar',
     faqs: [

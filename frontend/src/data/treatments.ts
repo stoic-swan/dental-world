@@ -141,7 +141,7 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { title: "Computer Guided Surgery", icon: "Activity" },
       { title: "High Quality Implants", icon: "Award" }
     ],
-    infographic: '/dental_implant_banner.png',
+    infographic: '/images/treatments/dental-implants.png',
     infographicData: {
       title: "FULL MOUTH DENTAL IMPLANTS",
       description: "Full mouth dental implants replace all missing or failing teeth in the upper and/or lower jaw using strategically placed dental implants and a fixed set of prosthetic teeth.",
@@ -217,7 +217,7 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { title: "Self-Ligating Brackets", icon: "Activity" },
       { title: "Memory Wire Tech", icon: "Award" }
     ],
-    infographic: "/braces_banner.png",
+    infographic: "/images/treatments/dental-braces.png",
     infographicData: {
       title: "ORTHODONTIC BRACES",
       description: "Traditional and ceramic braces are a proven, effective way to straighten teeth, correct bite issues, and create a perfectly aligned, healthy smile.",
@@ -351,7 +351,7 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { title: "Laser Dentistry", icon: "Activity" },
       { title: "Nitrous Oxide", icon: "ShieldCheck" }
     ],
-    infographic: "/pediatric_banner.png",
+    infographic: "/images/treatments/kids-dentistry.png",
     infographicData: {
       title: "PEDIATRIC DENTAL CARE",
       description: "Specialized, gentle dental care designed exclusively for children, focusing on prevention, education, and creating a positive, fear-free experience.",

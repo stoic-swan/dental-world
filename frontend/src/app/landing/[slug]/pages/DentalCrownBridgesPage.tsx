@@ -34,7 +34,7 @@ export default function DentalCrownBridgesPage({ branch, locations, whatsappUrl,
           'Long-Term Clinic Warranty Included',
           'Painless Preparation & Perfect Fit',
         ]}
-        image={mediaMap?.hero_crowns || '/images/new images/Treatments Theme Images/Crowns & Bridges.png'}
+        image={mediaMap?.hero_crowns || '/images/treatments/dental-crown-bridge.png'}
         imageAlt="High precision aesthetic dental crowns and bridge"
         bookLabel="Book Crown Consultation"
         phoneDisplay={branch.phone.display}

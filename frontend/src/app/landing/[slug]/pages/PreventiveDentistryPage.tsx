@@ -78,7 +78,7 @@ export default function PreventiveDentistryPage({ branch, locations, whatsappUrl
           <DoctorProfileCard
             name="Dr. Sneha"
             title="BDS, PGD Clinical Cosmetology & Restorative Dentistry"
-            image="/dr.sneha.jpg"
+            image="/sneha.jpg"
             experienceBadge="8+ Years of Family Preventive Dentistry"
             bullets={[
               'Passionate advocate for conservative, tooth-preserving dentistry',

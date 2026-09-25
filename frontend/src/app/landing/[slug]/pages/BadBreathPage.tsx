@@ -34,7 +34,7 @@ export default function BadBreathPage({ branch, locations, whatsappUrl, mediaMap
           'Personalized Fresh Breath Home Regimen',
           'Zero Discomfort, Immediate Results',
         ]}
-        image={mediaMap?.hero_bad_breath || '/images/new images/Treatments Theme Images/Bad Breath & Halitosis.png'}
+        image={mediaMap?.hero_bad_breath || '/images/treatments/bad-breath.png'}
         imageAlt="Consultation for fresh breath and oral health"
         bookLabel="Book Fresh Breath Consultation"
         phoneDisplay={branch.phone.display}
@@ -78,7 +78,7 @@ export default function BadBreathPage({ branch, locations, whatsappUrl, mediaMap
           <DoctorProfileCard
             name="Dr. Sneha"
             title="BDS, PGD Clinical Cosmetology & Restorative Dentistry"
-            image="/dr.sneha.jpg"
+            image="/sneha.jpg"
             experienceBadge="8+ Years of Preventive & Cosmetic Dentistry"
             bullets={[
               'Specialist in Halitosis & Oral Biofilm Elimination',

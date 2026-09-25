@@ -34,7 +34,7 @@ export default function ToothDecayPage({ branch, locations, whatsappUrl, mediaMa
           'Completed in a Single Quick Visit',
           'High Durability & Seamless Blend',
         ]}
-        image={mediaMap?.hero_tooth_decay || '/images/new images/Treatments Theme Images/Tooth Decay & Fillings.png'}
+        image={mediaMap?.hero_tooth_decay || '/images/treatments/tooth-decay-and-fillings.png'}
         imageAlt="Dental cavity restoration and tooth colored filling"
         bookLabel="Book Cavity Consultation"
         phoneDisplay={branch.phone.display}

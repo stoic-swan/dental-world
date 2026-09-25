@@ -76,7 +76,7 @@ export default function FrenectomyPage({ branch, locations, whatsappUrl, mediaMa
           <DoctorProfileCard
             name="Dr. Sneha"
             title="BDS, PGD Clinical Cosmetology & Laser Dentistry"
-            image="/dr.sneha.jpg"
+            image="/sneha.jpg"
             experienceBadge="8+ Years of Laser & Pediatric Dental Care"
             bullets={[
               'Certified in Minimally Invasive Soft-Tissue Laser Surgeries',

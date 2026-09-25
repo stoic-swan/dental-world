@@ -116,7 +116,7 @@ export default function MouthUlcersPage({ branch, locations, whatsappUrl, mediaM
           <DoctorProfileCard
             name="Dr. Sneha"
             title="BDS, PGD Clinical Cosmetology & Restorative Dentistry"
-            image="/dr.sneha.jpg"
+            image="/sneha.jpg"
             experienceBadge="8+ Years of Soft-Tissue & Laser Care"
             bullets={[
               'Certified in Advanced Diode Laser Photobiomodulation',
