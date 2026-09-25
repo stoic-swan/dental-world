@@ -52,9 +52,9 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { title: "Full Mouth", price: "1,20,000", features: ["Comprehensive Planning", "Full Restoration", "Highest Quality", "Lifetime Support"] }
     ],
     faqs: [
-      { question: "Is the procedure painful?", answer: "No, we use advanced local anesthesia and minimally invasive techniques to ensure you are completely comfortable." },
-      { question: "How long does it take?", answer: "The duration depends on the complexity, but most initial procedures take 1-2 hours." },
-      { question: "Are EMI options available?", answer: "Yes, we offer 0% interest EMI options on all major credit cards." }
+      { question: "Is the procedure painful?", answer: "No, not with modern techniques. Root canal treatment is performed under local anesthesia, so you won't feel pain during the procedure. In fact, the treatment is designed to relieve the pain caused by an infected or damaged tooth, not cause it. Most patients report feeling only mild sensitivity for a day or two afterward, which can be managed with over-the-counter pain relief." },
+      { question: "How long does it take?", answer: "Most root canal treatments are completed in one to two sittings, each lasting between 30 minutes to an hour, depending on the tooth being treated (front teeth are quicker than molars, which have more canals) and the severity of the infection. Your dentist will give you a clearer estimate after examining your tooth and X-rays." },
+      { question: "Are EMI options available?", answer: "Yes, we offer easy EMI (installment) options to make your treatment affordable and stress-free. Please speak with our front desk team or contact us directly to know more about the plans available and eligibility." }
     ],
     testimonials: [
       { id: 1, patient_name: "Ramesh Kumar", text: "Got my treatment done here. The doctors are very professional and the clinic is extremely hygienic. Highly recommended!", rating: 5, treatment_name: "Root Canal" }
@@ -124,8 +124,8 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { title: "All-on-4 (Full Arch)", price: "2,50,000", features: ["Comprehensive Planning", "4 Implants", "Fixed Prosthesis", "Lifetime Support"] }
     ],
     faqs: [
-      { question: "Are implants safe?", answer: "Yes, dental implants have a success rate of over 95% and are considered the standard of care for missing teeth." },
-      { question: "How long do implants last?", answer: "With proper care and good oral hygiene, dental implants can last a lifetime." }
+      { question: "Are implants safe?", answer: "Yes, dental implants are a safe and well-established treatment, backed by decades of clinical research and a high success rate (typically over 95%). They're made of biocompatible materials like titanium, which fuse naturally with your jawbone. As with any surgical procedure, there are some risks (like infection or implant failure), but these are uncommon when the procedure is performed by a qualified dentist and proper aftercare is followed." },
+      { question: "How long do implants last?", answer: "With proper care, dental implants can last 15 to 25 years, and many last a lifetime. The implant post itself (the titanium root) rarely needs replacement, though the crown on top may need replacement after 10 to 15 years due to normal wear and tear. Good oral hygiene and regular dental checkups play a big role in maximizing the lifespan of your implants." }
     ],
     testimonials: [
       { id: 1, patient_name: "Sunitha Rao", text: "Painless experience and great care. Worth every penny for the confidence it gave me back.", rating: 5, treatment_name: "Implants" },
@@ -195,8 +195,13 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { title: "Self-Ligating", price: "70,000", features: ["Advanced Technology", "Faster Results", "Fewer Appointments"] }
     ],
     faqs: [
-      { question: "Do braces hurt?", answer: "You may experience mild discomfort for a few days after adjustments, but it is manageable and temporary." },
-      { question: "Can adults get braces?", answer: "Absolutely! We offer various aesthetic options like ceramic braces that are perfect for adults." }
+      { question: "What are dental braces?", answer: "Dental braces are orthodontic appliances used to correct crooked, crowded, or misaligned teeth and improve your bite. They apply gentle, continuous pressure over time to gradually move teeth into their ideal position, resulting in a straighter smile and improved oral function." },
+      { question: "Which type of braces is best for me?", answer: "The right choice depends on your specific alignment issue, budget, and aesthetic preference. Metal braces are the most affordable and effective for complex cases; ceramic braces offer a less visible option at a moderate cost; and clear aligners are best suited for mild-to-moderate cases where appearance during treatment matters most. Our dentist will recommend the ideal option after examining your teeth and X-rays." },
+      { question: "How much do braces cost in Hyderabad?", answer: "Braces cost in Hyderabad typically ranges from around \u20b918,000\u2013\u20b930,000 for metal braces to \u20b91,50,000 and above for premium clear aligners like Invisalign, depending on the type of braces, treatment complexity, and duration. Ceramic and self-ligating braces usually fall in between. We provide a written, all-inclusive cost estimate after your consultation so there are no surprises." },
+      { question: "How long does braces treatment take?", answer: "Most braces treatments take between 12 to 24 months, depending on the complexity of your case. Simple corrections may be completed in about a year, while more complex bite issues can take up to 30 months." },
+      { question: "Are invisible braces effective?", answer: "Yes, invisible/clear aligners are highly effective for mild-to-moderate misalignment issues like spacing, crowding, and minor bite corrections. For more complex cases, traditional braces may still be recommended for better results. Our dentist can assess your case to determine if you're a good candidate." },
+      { question: "Do braces treatment cause pain?", answer: "Braces don't cause sharp pain, but you may experience mild soreness or discomfort for a few days after placement and after each adjustment visit, as your teeth adjust to the new pressure. This is normal and temporary, and manageable with over-the-counter pain relief." },
+      { question: "Can adults get braces?", answer: "Yes, braces are suitable for people of all ages, not just teenagers. Many adults choose braces or clear aligners to correct alignment issues or complete treatment they didn't undergo earlier in life. Adult treatment may take slightly longer due to denser bone structure, but results are just as effective." }
     ],
     testimonials: [
       { id: 1, patient_name: "Rahul M", text: "Dr. Nithin is amazing. My teeth are perfectly straight now!", rating: 5, treatment_name: "Braces" },
@@ -263,8 +268,8 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { title: "Comprehensive", price: "2,50,000", features: ["Unlimited Aligners", "Complex bite correction", "Refinements included"], isPopular: true }
     ],
     faqs: [
-      { question: "How many hours a day do I need to wear aligners?", answer: "For optimal results, aligners should be worn for 20-22 hours a day, removing them only for eating and cleaning." },
-      { question: "Are they really invisible?", answer: "Yes, the aligners are made of clear, medical-grade plastic and are virtually invisible to others." }
+      { question: "How many hours a day do I need to wear aligners?", answer: "For best results, aligners should be worn for 20 to 22 hours a day. They should only be removed while eating, drinking (anything other than water), brushing, and flossing. Wearing them for the recommended hours ensures your treatment stays on track and gives you the results predicted in your treatment plan." },
+      { question: "Are they really invisible?", answer: "Yes, clear aligners are made of transparent, medical-grade plastic that fits snugly over your teeth, making them virtually unnoticeable in everyday conversations and photos. Most people won't even realize you're wearing them unless you point it out \u2014 making them a popular choice for people who want to straighten their teeth discreetly." }
     ],
     testimonials: [
       { id: 1, patient_name: "Meghana P.", text: "Invisalign was the best decision! It was so convenient and discreet.", rating: 5, treatment_name: "Invisalign" }
@@ -397,8 +402,13 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { title: "Hollywood Smile", price: "1,50,000", features: ["Digital Smile Design", "Premium E-max Veneers", "Gum Contouring"], isPopular: true }
     ],
     faqs: [
-      { question: "Will my new smile look natural?", answer: "Yes, we customize the color, shape, and size to perfectly complement your facial features for a natural look." },
-      { question: "Does it take a long time?", answer: "Depending on the complexity, a full smile makeover can often be completed in just 2-3 visits." }
+      { question: "What is Smile Designing?", answer: "Smile designing is a cosmetic dentistry approach that enhances the appearance of your smile by combining one or more procedures \u2014 such as whitening, veneers, crowns, gum contouring, or alignment \u2014 tailored to your facial features, skin tone, and personality. The goal is to create a natural, harmonious smile that suits you individually, rather than a one-size-fits-all look." },
+      { question: "How is Smile Designing done?", answer: "The process typically begins with a detailed consultation and analysis of your facial symmetry, lip line, gum contour, and existing teeth. Digital imaging or mock-ups are often used to plan and preview the final result before any permanent changes are made. Based on this plan, your dentist performs the required procedures \u2014 such as whitening, veneers, crowns, bonding, or minor gum reshaping \u2014 over one or more visits, depending on the extent of the makeover." },
+      { question: "Is Smile Designing permanent?", answer: "It depends on the procedures involved. Treatments like porcelain veneers and crowns are long-lasting (often 10-15+ years) but may need eventual replacement due to normal wear. Teeth whitening is temporary and may need periodic touch-ups, while bonding typically lasts a few years. Your dentist will explain the expected longevity of each treatment included in your personalized plan." },
+      { question: "What is Digital Smile Design?", answer: "Digital Smile Design (DSD) is a technology-driven approach that uses digital photos, videos, and imaging software to plan your smile makeover before treatment begins. It allows you to preview a simulation of your new smile in advance, ensuring the final result aligns with your expectations and facial harmony before any procedure is performed." },
+      { question: "How much does Smile Designing cost?", answer: "Smile designing costs generally range from around \u20b915,000 for minor touch-ups to over \u20b92,50,000 for a complete makeover involving veneers, crowns, and alignment correction. The final cost depends on the specific treatments chosen, the number of teeth involved, and the materials used. We provide a detailed, written cost estimate after your consultation." },
+      { question: "How long does Smile Designing treatment take?", answer: "Simple enhancements like whitening or minor bonding can often be completed in a single visit, while more comprehensive makeovers involving veneers or crowns may take a few weeks to complete across multiple appointments. If orthodontic correction is part of your plan, the overall timeline can extend to several months." },
+      { question: "Who can go for Smile Designing?", answer: "Smile designing is suitable for anyone looking to improve the appearance of their smile \u2014 whether due to stained, chipped, gapped, or misaligned teeth, or simply to enhance overall facial aesthetics. It's a popular option for people preparing for special occasions (like weddings) as well as those seeking a long-term confidence boost. Your dentist will assess your oral health first to ensure you're a good candidate for the specific treatments involved." }
     ],
     testimonials: [
       { id: 1, patient_name: "Karan D.", text: "I can't stop smiling! The veneers look incredibly natural. Best investment in myself.", rating: 5, treatment_name: "Smile Designing" }
@@ -559,7 +569,10 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { title: "Surgical Extraction", price: "6,000", features: ["Impacted Tooth Removal", "Suturing", "Specialist Oral Surgeon"], isPopular: true }
     ],
     faqs: [
-      { question: "Is wisdom tooth extraction painful?", answer: "The procedure is completely painless as it is done under local anesthesia. Some post-op soreness is expected and managed with pain relievers." }
+      { question: "Is wisdom tooth extraction painful?", answer: "No, the extraction itself is performed under local anesthesia, so you won't feel pain during the procedure. Some pressure or movement sensation is normal. After the anesthesia wears off, you may experience mild-to-moderate discomfort and swelling for a few days, which can be managed with prescribed pain medication." },
+      { question: "How long is the recovery after extraction?", answer: "Initial healing typically takes 3 to 4 days, during which swelling and discomfort gradually subside. Complete healing of the gum tissue takes about 1 to 2 weeks, while the underlying bone can take a few months to fully heal. Recovery time may be slightly longer for impacted wisdom teeth or more complex extractions." },
+      { question: "When is wisdom tooth removal necessary?", answer: "Wisdom tooth removal is usually recommended when the tooth is impacted (unable to fully emerge), causing pain, infection, or damage to nearby teeth, when there isn't enough space in the jaw for it to erupt properly, or when it's positioned at an angle that could lead to crowding, decay, or gum disease. Your dentist will assess this through a clinical exam and X-rays." },
+      { question: "What can I eat after extraction?", answer: "For the first 24 hours, stick to soft, cool foods like yogurt, mashed potatoes, smoothies (no straw), and soup at room temperature. Avoid hot, spicy, crunchy, or hard foods, as well as carbonated drinks and alcohol, for at least a few days. As healing progresses, you can gradually reintroduce your normal diet over the following week, based on your comfort level." }
     ],
     testimonials: [
       { id: 1, patient_name: "Naveen K.", text: "I was scared of the extraction, but the oral surgeon was so quick and painless!", rating: 5, treatment_name: "Wisdom Tooth" }
@@ -587,7 +600,12 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { title: "Flap Surgery (per quadrant)", price: "8,000", features: ["Flap Access", "Debridement", "Bone Grafting if needed"], isPopular: true }
     ],
     faqs: [
-      { question: "What is flap surgery?", answer: "It is a routine procedure where gums are gently lifted back to clean deep tartar deposits on the roots, then sutured back in place for healthy reattachment." }
+      { question: "What causes gum disease?", answer: "Gum disease is mainly caused by plaque \u2014 a sticky film of bacteria that builds up on teeth and gums when oral hygiene is inadequate. If not removed through regular brushing and flossing, plaque hardens into tartar, leading to inflammation and infection of the gums. Other contributing factors include smoking, poor nutrition, hormonal changes, certain medications, diabetes, and genetic predisposition." },
+      { question: "How do I know if I have gum disease?", answer: "Common warning signs include red, swollen, or tender gums, bleeding while brushing or flossing, persistent bad breath, receding gums, loose teeth, and pain while chewing. In early stages (gingivitis), symptoms may be mild, which is why regular dental checkups are important for early detection." },
+      { question: "Is laser gum treatment better than regular treatment?", answer: "Laser treatment offers several advantages over conventional methods, including greater precision, minimal bleeding, reduced discomfort, and faster healing time. It's especially effective for treating infected gum tissue with less damage to surrounding areas. That said, the right treatment for you depends on the severity of your condition \u2014 our dentist will recommend the best option after an examination." },
+      { question: "Does gum treatment hurt?", answer: "Most gum treatments are performed under local anesthesia, so you shouldn't feel pain during the procedure. Some mild soreness or sensitivity is normal for a day or two afterward, which is easily managed with prescribed medication or simple home care." },
+      { question: "How long does gum treatment take to show results?", answer: "Many patients notice reduced swelling and bleeding within a week of treatment. Complete healing and gum tissue recovery can take a few weeks, depending on the severity of the disease and how well you follow post-treatment care instructions." },
+      { question: "Can gum disease cause tooth loss?", answer: "Yes, if left untreated, gum disease can progress and damage the bone and tissue supporting your teeth, eventually leading to tooth mobility and loss. This is why early diagnosis and timely treatment are essential to protect your natural teeth." }
     ],
     testimonials: [
       { id: 1, patient_name: "Venkatesh M.", text: "My bleeding gums have completely healed. The treatment saved my teeth!", rating: 5, treatment_name: "Gum Treatment" }
@@ -642,7 +660,11 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { title: "Implant Overdenture", price: "1,20,000", features: ["2-4 Implants", "Locators/Semi-Fixed", "Enhanced Stability"], isPopular: true }
     ],
     faqs: [
-      { question: "What is a hybrid denture?", answer: "A hybrid denture is a fixed set of teeth supported by 4 to 6 dental implants. It is bolted in place and can only be removed by a dentist, offering ultimate stability." }
+      { question: "What are dentures?", answer: "Dentures are removable dental appliances designed to replace missing teeth and restore your smile, chewing ability, and speech. They can be complete (replacing all teeth in an arch) or partial (replacing only a few missing teeth), and are custom-made to fit the shape of your mouth for a natural look and comfortable fit." },
+      { question: "Are dentures painful?", answer: "Dentures shouldn't cause pain once properly fitted, though it's normal to feel some initial discomfort, soreness, or irritation as your mouth adjusts during the first few weeks. If dentures continue to cause pain, rubbing, or sore spots after the adjustment period, they may need a fitting adjustment \u2014 please let us know so we can correct it." },
+      { question: "How do I clean my dentures at home?", answer: "Remove and rinse your dentures after every meal to clear away food particles. Brush them daily with a soft-bristled denture brush and mild soap or a non-abrasive denture cleanser (avoid regular toothpaste, which can be too abrasive). Soak them overnight in water or a denture-cleaning solution to keep them from drying out and losing their shape. Also remember to gently clean your gums, tongue, and any remaining natural teeth daily." },
+      { question: "Can dentures be fitted to receding gums?", answer: "Yes, dentures can be fitted even if you have receding gums, though the gum and bone structure will affect how the denture is designed and how it fits. Since gums and jawbone can change shape over time (especially after tooth loss), dentures may need periodic relining or adjustment to maintain a snug, comfortable fit. Our dentist will evaluate your gum and bone condition to ensure the best possible fit." },
+      { question: "Are dentures permanent or removable?", answer: "This depends on the type. Conventional dentures are removable and can be taken out for cleaning and while sleeping. Implant-supported or \"permanent\" dentures, on the other hand, are anchored to dental implants and stay fixed in the mouth, offering more stability and a feel closer to natural teeth. Your dentist can help you decide which option suits your needs and budget." }
     ],
     testimonials: [
       { id: 1, patient_name: "Ramarao Y.", text: "The implant-supported dentures are amazing. They don't slip at all when I eat!", rating: 5, treatment_name: "Dentures" }

@@ -80,30 +80,40 @@ export default function BeforeAfterShowcase({ customCases }: { customCases?: Sho
       } gap-6`}>
         {displayCases.map((item, idx) => (
           <div key={idx} className="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm transition-all duration-300 hover:shadow-md flex flex-col justify-between">
-            <div className="flex w-full">
-              {/* Before Image */}
-              <div className="relative w-1/2 aspect-[4/5] bg-slate-100 overflow-hidden">
+            {item.before === item.after ? (
+              <div className="relative w-full aspect-[8/5] bg-slate-100 overflow-hidden">
                 <img
                   src={item.before}
-                  alt={`${item.title} Before`}
+                  alt={`${item.title} Before and After`}
                   className="w-full h-full object-cover"
                 />
-                <span className="absolute top-2 left-2 px-2 py-0.5 bg-red-600/90 text-white font-extrabold text-[10px] rounded shadow-sm">
-                  BEFORE
-                </span>
               </div>
-              {/* After Image */}
-              <div className="relative w-1/2 aspect-[4/5] bg-slate-100 border-l border-white overflow-hidden">
-                <img
-                  src={item.after}
-                  alt={`${item.title} After`}
-                  className="w-full h-full object-cover"
-                />
-                <span className="absolute top-2 left-2 px-2 py-0.5 bg-green-600/90 text-white font-extrabold text-[10px] rounded shadow-sm">
-                  AFTER
-                </span>
+            ) : (
+              <div className="flex w-full">
+                {/* Before Image */}
+                <div className="relative w-1/2 aspect-[4/5] bg-slate-100 overflow-hidden">
+                  <img
+                    src={item.before}
+                    alt={`${item.title} Before`}
+                    className="w-full h-full object-cover"
+                  />
+                  <span className="absolute top-2 left-2 px-2 py-0.5 bg-red-600/90 text-white font-extrabold text-[10px] rounded shadow-sm">
+                    BEFORE
+                  </span>
+                </div>
+                {/* After Image */}
+                <div className="relative w-1/2 aspect-[4/5] bg-slate-100 border-l border-white overflow-hidden">
+                  <img
+                    src={item.after}
+                    alt={`${item.title} After`}
+                    className="w-full h-full object-cover"
+                  />
+                  <span className="absolute top-2 left-2 px-2 py-0.5 bg-green-600/90 text-white font-extrabold text-[10px] rounded shadow-sm">
+                    AFTER
+                  </span>
+                </div>
               </div>
-            </div>
+            )}
             <div className="p-3.5 bg-slate-50 border-t border-slate-100 text-center">
               <span className="font-extrabold text-xs text-slate-700 tracking-tight">{item.title}</span>
             </div>
@@ -114,30 +124,40 @@ export default function BeforeAfterShowcase({ customCases }: { customCases?: Sho
       {/* Mobile Card Slider View */}
       <div className="md:hidden block">
         <div className="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm transition-all duration-300">
-          <div className="flex w-full">
-            {/* Before Image */}
-            <div className="relative w-1/2 aspect-[4/5] bg-slate-100 overflow-hidden">
+          {displayCases[activeIdx]?.before === displayCases[activeIdx]?.after ? (
+            <div className="relative w-full aspect-[8/5] bg-slate-100 overflow-hidden">
               <img
                 src={displayCases[activeIdx]?.before}
-                alt={`${displayCases[activeIdx]?.title} Before`}
+                alt={`${displayCases[activeIdx]?.title} Before and After`}
                 className="w-full h-full object-cover"
               />
-              <span className="absolute top-2 left-2 px-2 py-0.5 bg-red-600/90 text-white font-extrabold text-[10px] rounded shadow-sm">
-                BEFORE
-              </span>
             </div>
-            {/* After Image */}
-            <div className="relative w-1/2 aspect-[4/5] bg-slate-100 border-l border-white overflow-hidden">
-              <img
-                src={displayCases[activeIdx]?.after}
-                alt={`${displayCases[activeIdx]?.title} After`}
-                className="w-full h-full object-cover"
-              />
-              <span className="absolute top-2 left-2 px-2 py-0.5 bg-green-600/90 text-white font-extrabold text-[10px] rounded shadow-sm">
-                AFTER
-              </span>
+          ) : (
+            <div className="flex w-full">
+              {/* Before Image */}
+              <div className="relative w-1/2 aspect-[4/5] bg-slate-100 overflow-hidden">
+                <img
+                  src={displayCases[activeIdx]?.before}
+                  alt={`${displayCases[activeIdx]?.title} Before`}
+                  className="w-full h-full object-cover"
+                />
+                <span className="absolute top-2 left-2 px-2 py-0.5 bg-red-600/90 text-white font-extrabold text-[10px] rounded shadow-sm">
+                  BEFORE
+                </span>
+              </div>
+              {/* After Image */}
+              <div className="relative w-1/2 aspect-[4/5] bg-slate-100 border-l border-white overflow-hidden">
+                <img
+                  src={displayCases[activeIdx]?.after}
+                  alt={`${displayCases[activeIdx]?.title} After`}
+                  className="w-full h-full object-cover"
+                />
+                <span className="absolute top-2 left-2 px-2 py-0.5 bg-green-600/90 text-white font-extrabold text-[10px] rounded shadow-sm">
+                  AFTER
+                </span>
+              </div>
             </div>
-          </div>
+          )}
           <div className="p-3 bg-slate-50 text-center border-t border-slate-100">
             <span className="font-extrabold text-xs text-slate-700">{displayCases[activeIdx]?.title}</span>
           </div>

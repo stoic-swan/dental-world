@@ -18,6 +18,14 @@ import WisdomToothPage from './pages/WisdomToothPage';
 import InvisalignPage from './pages/InvisalignPage';
 import ImplantsPage from './pages/ImplantsPage';
 import RootCanalPage from './pages/RootCanalPage';
+import ToothDecayPage from './pages/ToothDecayPage';
+import BadBreathPage from './pages/BadBreathPage';
+import DentalCrownBridgesPage from './pages/DentalCrownBridgesPage';
+import FrenectomyPage from './pages/FrenectomyPage';
+import JawSurgeryPage from './pages/JawSurgeryPage';
+import GenioplastyPage from './pages/GenioplastyPage';
+import MouthUlcersPage from './pages/MouthUlcersPage';
+import PreventiveDentistryPage from './pages/PreventiveDentistryPage';
 
 interface PageEntry {
   dataKey: keyof typeof treatmentsData;
@@ -84,13 +92,13 @@ const PAGES: Record<string, PageEntry> = {
   'invisalign-treatment': {
     dataKey: 'invisalign-treatment',
     title: 'Invisalign Treatment in Hyderabad | Dental World',
-    description: 'Straighten your teeth without braces. Gold Certified Invisalign Provider in Bachupally & Pragathi Nagar, Hyderabad.',
+    description: 'Straighten your teeth without braces. Platinum Certified Invisalign Provider in Bachupally & Pragathi Nagar, Hyderabad.',
     Component: InvisalignPage,
   },
   'invisalign-pragathi-nagar': {
     dataKey: 'invisalign-treatment',
     title: 'Invisalign Treatment in Pragathi Nagar | Dental World',
-    description: 'Straighten your teeth without braces. Gold Certified Invisalign Provider in Pragathi Nagar, Hyderabad.',
+    description: 'Straighten your teeth without braces. Platinum Certified Invisalign Provider in Pragathi Nagar, Hyderabad.',
     Component: InvisalignPage,
   },
   'dental-implants': {
@@ -110,6 +118,90 @@ const PAGES: Record<string, PageEntry> = {
     title: 'Pain-Free Root Canal Treatment in Hyderabad | Dental World',
     description: 'Painless, precise, permanent root canal therapy from expert MDS Endodontists in Bachupally & Pragathi Nagar, Hyderabad.',
     Component: RootCanalPage,
+  },
+  'tooth-decay-fillings': {
+    dataKey: 'tooth-decay-fillings',
+    title: 'Painless Tooth Decay & Dental Fillings in Hyderabad | Dental World',
+    description: 'Restore decayed teeth with invisible tooth-colored composite fillings. 100% mercury-free, painless single-visit care in Bachupally & Pragathi Nagar.',
+    Component: ToothDecayPage,
+  },
+  'tooth-decay-and-dental-fillings': {
+    dataKey: 'tooth-decay-fillings',
+    title: 'Painless Tooth Decay & Dental Fillings in Hyderabad | Dental World',
+    description: 'Restore decayed teeth with invisible tooth-colored composite fillings. 100% mercury-free, painless single-visit care in Bachupally & Pragathi Nagar.',
+    Component: ToothDecayPage,
+  },
+  'bad-breath-halitosis': {
+    dataKey: 'bad-breath-halitosis',
+    title: 'Bad Breath & Halitosis Treatment in Hyderabad | Dental World',
+    description: 'Permanent cure for bad breath (halitosis). Deep tongue and gum biofilm cleaning by expert specialists in Bachupally & Pragathi Nagar, Hyderabad.',
+    Component: BadBreathPage,
+  },
+  'bad-breath': {
+    dataKey: 'bad-breath-halitosis',
+    title: 'Bad Breath & Halitosis Treatment in Hyderabad | Dental World',
+    description: 'Permanent cure for bad breath (halitosis). Deep tongue and gum biofilm cleaning by expert specialists in Bachupally & Pragathi Nagar, Hyderabad.',
+    Component: BadBreathPage,
+  },
+  'dental-crown-bridges': {
+    dataKey: 'dental-crown-bridges',
+    title: 'CAD/CAM Dental Crowns & Fixed Bridges in Hyderabad | Dental World',
+    description: 'Precision monolithic Zirconia and E-Max ceramic crowns and bridges with up to 15-year warranty in Bachupally & Pragathi Nagar, Hyderabad.',
+    Component: DentalCrownBridgesPage,
+  },
+  'crown-and-bridges': {
+    dataKey: 'dental-crown-bridges',
+    title: 'CAD/CAM Dental Crowns & Fixed Bridges in Hyderabad | Dental World',
+    description: 'Precision monolithic Zirconia and E-Max ceramic crowns and bridges with up to 15-year warranty in Bachupally & Pragathi Nagar, Hyderabad.',
+    Component: DentalCrownBridgesPage,
+  },
+  'frenectomy': {
+    dataKey: 'frenectomy',
+    title: 'Painless Laser Frenectomy in Hyderabad | Dental World',
+    description: 'Safe, stitch-free laser tongue-tie and lip-tie release for infants, children, and adults in Bachupally & Pragathi Nagar, Hyderabad.',
+    Component: FrenectomyPage,
+  },
+  'tongue-tie-frenectomy': {
+    dataKey: 'frenectomy',
+    title: 'Painless Laser Frenectomy in Hyderabad | Dental World',
+    description: 'Safe, stitch-free laser tongue-tie and lip-tie release for infants, children, and adults in Bachupally & Pragathi Nagar, Hyderabad.',
+    Component: FrenectomyPage,
+  },
+  'jaw-surgery': {
+    dataKey: 'jaw-surgery',
+    title: 'Corrective Orthognathic Jaw Surgery in Hyderabad | Dental World',
+    description: 'Expert orthognathic surgery for underbite, overbite, TMJ pain, and facial asymmetry. 3D virtual surgical planning with zero facial scars.',
+    Component: JawSurgeryPage,
+  },
+  'orthognathic-surgery': {
+    dataKey: 'jaw-surgery',
+    title: 'Corrective Orthognathic Jaw Surgery in Hyderabad | Dental World',
+    description: 'Expert orthognathic surgery for underbite, overbite, TMJ pain, and facial asymmetry. 3D virtual surgical planning with zero facial scars.',
+    Component: JawSurgeryPage,
+  },
+  'genioplasty': {
+    dataKey: 'genioplasty',
+    title: 'Surgical Genioplasty (Chin Reshaping) in Hyderabad | Dental World',
+    description: 'Permanent chin advancement, reduction, and symmetry correction with zero external scars by senior maxillofacial surgeons in Hyderabad.',
+    Component: GenioplastyPage,
+  },
+  'chin-surgery': {
+    dataKey: 'genioplasty',
+    title: 'Surgical Genioplasty (Chin Reshaping) in Hyderabad | Dental World',
+    description: 'Permanent chin advancement, reduction, and symmetry correction with zero external scars by senior maxillofacial surgeons in Hyderabad.',
+    Component: GenioplastyPage,
+  },
+  'mouth-ulcers': {
+    dataKey: 'mouth-ulcers',
+    title: 'Laser Mouth Ulcer Relief & Oral Lesion Biopsy in Hyderabad | Dental World',
+    description: 'Instant canker sore pain relief in 60 seconds with diode lasers and expert diagnostic biopsy for non-healing oral lesions in Hyderabad.',
+    Component: MouthUlcersPage,
+  },
+  'preventive-dentistry': {
+    dataKey: 'preventive-dentistry',
+    title: 'Preventive Dentistry & Cavity Protection in Hyderabad | Dental World',
+    description: 'Protect your teeth with pit & fissure sealants, fluoride varnish, and routine checkups in Bachupally & Pragathi Nagar, Hyderabad.',
+    Component: PreventiveDentistryPage,
   },
 };
 

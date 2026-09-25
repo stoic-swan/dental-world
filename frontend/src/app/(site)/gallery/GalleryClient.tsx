@@ -33,6 +33,27 @@ const defaultGalleryCases = [
     category: 'Gum Treatment',
     beforeImage: '/images/gums_before.png',
     afterImage: '/images/gums_after.png'
+  },
+  {
+    id: '5',
+    title: 'Orthodontic Braces Alignment',
+    category: 'Braces',
+    beforeImage: '/images/aug2026/braces_before_after_hd.png',
+    afterImage: '/images/aug2026/braces_before_after_hd.png'
+  },
+  {
+    id: '6',
+    title: 'Microscopic Root Canal Therapy',
+    category: 'Root Canal',
+    beforeImage: '/images/aug2026/rct_before_after_hd.png',
+    afterImage: '/images/aug2026/rct_before_after_hd.png'
+  },
+  {
+    id: '7',
+    title: 'Surgical Wisdom Tooth Extraction',
+    category: 'Oral Surgery',
+    beforeImage: '/images/aug2026/wisdom_tooth_before_after_hd.png',
+    afterImage: '/images/aug2026/wisdom_tooth_before_after_hd.png'
   }
 ];
 
@@ -93,35 +114,45 @@ export default function GalleryClient({ initialCases }: { initialCases?: BeforeA
                 <div key={caseItem.id} className="group bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-1">
                   
                   {/* Image Split Container */}
-                  <div className="flex w-full h-[250px] sm:h-[350px] relative bg-slate-50">
-                    
-                    {/* Before Image */}
-                    <div className="w-1/2 relative h-full border-r-2 border-white overflow-hidden">
-                      <img 
-                        src={caseItem.beforeImage} 
-                        alt={`${caseItem.title} Before`} 
-                        className="w-full h-full object-cover object-center"
-                      />
-                      <div className="absolute top-4 left-4 bg-red-600/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
-                        Before
+                  <div className="w-full h-[250px] sm:h-[350px] relative bg-slate-50 overflow-hidden">
+                    {caseItem.beforeImage === caseItem.afterImage ? (
+                      <div className="w-full h-full relative">
+                        <img 
+                          src={caseItem.beforeImage} 
+                          alt={`${caseItem.title} Before and After Transformation`} 
+                          className="w-full h-full object-cover object-center"
+                        />
                       </div>
-                    </div>
-                    
-                    {/* After Image */}
-                    <div className="w-1/2 relative h-full overflow-hidden">
-                      <img 
-                        src={caseItem.afterImage} 
-                        alt={`${caseItem.title} After`} 
-                        className="w-full h-full object-cover object-center"
-                      />
-                      <div className="absolute top-4 right-4 bg-green-600/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg">
-                        After
+                    ) : (
+                      <div className="flex w-full h-full relative">
+                        {/* Before Image */}
+                        <div className="w-1/2 relative h-full border-r-2 border-white overflow-hidden">
+                          <img 
+                            src={caseItem.beforeImage} 
+                            alt={`${caseItem.title} Before`} 
+                            className="w-full h-full object-cover object-center"
+                          />
+                          <div className="absolute top-4 left-4 bg-red-600/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+                            Before
+                          </div>
+                        </div>
+                        
+                        {/* After Image */}
+                        <div className="w-1/2 relative h-full overflow-hidden">
+                          <img 
+                            src={caseItem.afterImage} 
+                            alt={`${caseItem.title} After`} 
+                            className="w-full h-full object-cover object-center"
+                          />
+                          <div className="absolute top-4 right-4 bg-green-600/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg">
+                            After
+                          </div>
+                        </div>
+
+                        {/* Center Divider styling */}
+                        <div className="absolute inset-y-0 left-1/2 w-1 bg-white shadow-[0_0_10px_rgba(0,0,0,0.3)] transform -translate-x-1/2 z-10 hidden sm:block"></div>
                       </div>
-                    </div>
-
-                    {/* Center Divider styling */}
-                    <div className="absolute inset-y-0 left-1/2 w-1 bg-white shadow-[0_0_10px_rgba(0,0,0,0.3)] transform -translate-x-1/2 z-10 hidden sm:block"></div>
-
+                    )}
                   </div>
 
                   {/* Content */}

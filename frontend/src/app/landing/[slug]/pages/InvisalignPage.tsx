@@ -17,14 +17,14 @@ export default function InvisalignPage({ branch, locations, whatsappUrl }: {
 
   return (
     <div className="pb-20 md:pb-24">
-      <TopTrustBar items={['Gold Certified Invisalign Provider', 'iTero 3D Digital Scans', 'Virtually Invisible Aligners', '0% EMI Available']} />
+      <TopTrustBar items={['Platinum Certified Invisalign Provider', 'iTero 3D Digital Scans', 'Virtually Invisible Aligners', '0% EMI Available']} />
 
       <LandingHero
         eyebrow="Bachupally & Pragathi Nagar, Hyderabad"
         headlineLead="Invisalign Treatment in"
         headlineMain="Hyderabad"
         subtitle="Straighten Your Teeth Without Braces"
-        desc="Transform your smile with Invisalign clear aligners from Gold Certified Invisalign Provider Dr. Nitin Bharat, MDS Orthodontics with 14+ years experience."
+        desc="Transform your smile with Invisalign clear aligners from Platinum Certified Invisalign Provider Dr. Nitin Bharat, MDS Orthodontics with 14+ years experience."
         bullets={['Virtually Invisible Aligners', 'Comfortable & Removable Trays', 'Faster Results in 6-18 Months', 'Custom 3D Treatment Planning', 'Fewer Clinic Visits Required', 'Flexible 0% EMI Options']}
         image="/invisalign_banner.png"
         imageAlt="Invisalign clear aligner treatment"
@@ -37,7 +37,7 @@ export default function InvisalignPage({ branch, locations, whatsappUrl }: {
       <StatsBar items={[
         { icon: <Award className="w-6 h-6" />, label: '14+ Years', sub: 'Expert Orthodontics' },
         { icon: <Users className="w-6 h-6" />, label: '85,000+', sub: 'Happy Smiles Created' },
-        { icon: <ShieldCheck className="w-6 h-6" />, label: 'Gold', sub: 'Invisalign Provider' },
+        { icon: <ShieldCheck className="w-6 h-6" />, label: 'Platinum', sub: 'Invisalign Provider' },
         { icon: <Star className="w-6 h-6 fill-current" />, label: '4.9★', sub: '1,200+ Google Reviews' },
       ]} />
 
@@ -72,7 +72,7 @@ export default function InvisalignPage({ branch, locations, whatsappUrl }: {
             image="/nithin.jpg"
             experienceBadge="14+ Years of Expert Orthodontics"
             bullets={[
-              'Gold Certified Invisalign Consultant',
+              'Platinum Certified Invisalign Provider',
               'Specialist in Pediatric & Adult Braces',
               'MDS Dentofacial Orthodontics Degree',
               'Thousands of Smiles Transformed',
@@ -119,7 +119,7 @@ export default function InvisalignPage({ branch, locations, whatsappUrl }: {
         <div className="max-w-[1400px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div>
             <h3 className="text-lg font-heading font-black mb-4" style={{ color: NAVY }}>Frequently Asked Questions</h3>
-            <MiniFAQList faqs={data.faqs.map(f => ({ question: f.question }))} />
+            <MiniFAQList faqs={data.faqs.map(f => ({ question: f.question, answer: f.answer }))} />
             <Link href="/faq" className="inline-block mt-4 text-white text-xs font-black px-5 py-2.5 rounded-lg" style={{ backgroundColor: NAVY }}>
               View All FAQs
             </Link>

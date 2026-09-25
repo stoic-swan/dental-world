@@ -60,7 +60,6 @@ export default function AdminLoginPage() {
                   type="text"
                   name="username"
                   required
-                  defaultValue="admin"
                   placeholder="Enter username"
                   className="w-full pl-11 pr-4 py-3 bg-slate-900/80 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent transition"
                 />
@@ -79,7 +78,6 @@ export default function AdminLoginPage() {
                   type="password"
                   name="password"
                   required
-                  defaultValue="admin123"
                   placeholder="Enter password"
                   className="w-full pl-11 pr-4 py-3 bg-slate-900/80 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent transition"
                 />
@@ -106,13 +104,6 @@ export default function AdminLoginPage() {
               )}
             </button>
           </form>
-
-          {/* Quick Credential Hint */}
-          <div className="mt-8 pt-6 border-t border-slate-700/60 text-center">
-            <p className="text-xs text-slate-400">
-              Default Admin Credentials: <code className="bg-slate-900 px-2 py-1 rounded text-cyan-300 font-mono">admin</code> / <code className="bg-slate-900 px-2 py-1 rounded text-cyan-300 font-mono">admin123</code>
-            </p>
-          </div>
         </div>
       </div>
     </div>

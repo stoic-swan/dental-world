@@ -32,7 +32,7 @@ export async function loginAdmin(formData: FormData) {
     return { success: true };
   }
 
-  return { success: false, error: 'Invalid username or password. Try username: admin, password: admin123' };
+  return { success: false, error: 'Invalid username or password' };
 }
 
 /**

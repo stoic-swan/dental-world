@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Star, MapPin, Phone, Mail, Check, Plus, ArrowRight } from 'lucide-react';
+import { Star, MapPin, Phone, Mail, Check, Plus, ChevronDown, ArrowRight } from 'lucide-react';
 import type { ReactNode } from 'react';
 import BookAppointmentForm from '@/components/BookAppointmentForm';
 
@@ -286,10 +286,10 @@ export function ServiceImageGrid({ title, subtitle, items, cols = 6, showCaption
   );
 }
 
-export interface ServiceIconCard { icon: ReactNode; title: string; desc?: string }
+export interface ServiceIconCard { icon?: ReactNode; image?: string; title: string; desc?: string }
 
 export function ServiceIconGrid({ title, subtitle, items, cols = 6 }: { title: string; subtitle?: string; items: ServiceIconCard[]; cols?: number }) {
-  const colClass = cols >= 6 ? 'lg:grid-cols-6' : cols === 5 ? 'lg:grid-cols-5' : 'lg:grid-cols-4';
+  const colClass = cols >= 6 ? 'lg:grid-cols-6' : cols === 5 ? 'lg:grid-cols-5' : cols === 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-3';
   return (
     <section className="py-14 bg-white">
       <div className="max-w-[1400px] mx-auto px-4">
@@ -300,8 +300,12 @@ export function ServiceIconGrid({ title, subtitle, items, cols = 6 }: { title: s
         <div className={`grid grid-cols-2 sm:grid-cols-3 ${colClass} gap-4 md:gap-5`}>
           {items.map((item, idx) => (
             <div key={idx} className="bg-white border border-slate-150 rounded-2xl p-5 flex flex-col items-center text-center gap-2.5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-              <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center shrink-0" style={{ color: NAVY_LIGHT }}>
-                {item.icon}
+              <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center shrink-0 overflow-hidden" style={{ color: NAVY_LIGHT }}>
+                {item.image ? (
+                  <Image src={item.image} alt={item.title} width={64} height={64} className="object-contain p-1" />
+                ) : (
+                  item.icon
+                )}
               </div>
               <h4 className="font-extrabold text-xs md:text-sm leading-tight" style={{ color: NAVY }}>{item.title}</h4>
               {item.desc && <p className="text-[10px] md:text-[11px] text-slate-500 font-semibold leading-snug">{item.desc}</p>}
@@ -315,7 +319,7 @@ export function ServiceIconGrid({ title, subtitle, items, cols = 6 }: { title: s
 
 // ---------- How it works (icon step flow) ----------
 
-export interface StepItem { icon: ReactNode; title: string; desc?: string }
+export interface StepItem { icon?: ReactNode; image?: string; title: string; desc?: string }
 
 export function HowItWorksFlow({ title, steps }: { title: string; steps: StepItem[] }) {
   return (
@@ -327,8 +331,12 @@ export function HowItWorksFlow({ title, steps }: { title: string; steps: StepIte
             {steps.map((step, idx) => (
               <div key={idx} className="flex items-center">
                 <div className="flex flex-col items-center text-center w-24 md:w-28">
-                  <div className="w-14 h-14 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center mb-2.5 shrink-0" style={{ color: NAVY_LIGHT }}>
-                    {step.icon}
+                  <div className="w-16 h-16 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center mb-2.5 shrink-0 overflow-hidden" style={{ color: NAVY_LIGHT }}>
+                    {step.image ? (
+                      <Image src={step.image} alt={step.title} width={64} height={64} className="object-contain p-1" />
+                    ) : (
+                      step.icon
+                    )}
                   </div>
                   <span className="text-xs md:text-sm font-black text-slate-800 leading-tight">{step.title}</span>
                   {step.desc && <span className="text-[10px] text-slate-500 font-semibold mt-1 leading-snug">{step.desc}</span>}
@@ -357,6 +365,7 @@ export function SymptomsEmergency({
   ctaLabel,
   phoneDisplay,
   phoneTel,
+  emergencyImage,
 }: {
   title: string;
   symptoms: SymptomItem[];
@@ -365,6 +374,7 @@ export function SymptomsEmergency({
   ctaLabel: string;
   phoneDisplay: string;
   phoneTel: string;
+  emergencyImage?: string;
 }) {
   return (
     <section className="py-14 bg-white">
@@ -384,27 +394,48 @@ export function SymptomsEmergency({
             ))}
           </div>
 
-          <div className="lg:col-span-4 text-white rounded-3xl p-6 flex flex-col justify-between shadow-lg" style={{ backgroundColor: RED }}>
-            <div className="space-y-3">
-              <h3 className="text-lg font-black">{emergencyTitle}</h3>
-              <p className="text-xs font-semibold text-red-100">Early treatment can prevent</p>
-              <ul className="space-y-1.5">
-                {emergencyItems.map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-2 text-sm font-bold">
-                    <Check className="w-4 h-4 shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <a
-              href={`tel:${phoneTel}`}
-              className="mt-5 bg-white font-black text-xs px-4 py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-red-50 transition"
-              style={{ color: RED }}
-            >
-              <Phone className="w-4 h-4" />
-              {ctaLabel}: {phoneDisplay}
-            </a>
+          <div className="lg:col-span-4 flex flex-col">
+            {emergencyImage ? (
+              <div className="relative rounded-3xl overflow-hidden shadow-lg border border-slate-150 flex flex-col justify-end min-h-[300px] h-full group">
+                <Image
+                  src={emergencyImage}
+                  alt={emergencyTitle}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(max-width: 1024px) 100vw, 400px"
+                />
+                <a
+                  href={`tel:${phoneTel}`}
+                  className="relative z-10 m-4 bg-red-600 hover:bg-red-700 text-white font-black text-xs px-4 py-3 rounded-xl flex items-center justify-center gap-2 shadow-lg transition"
+                >
+                  <Phone className="w-4 h-4" />
+                  {ctaLabel}: {phoneDisplay}
+                </a>
+              </div>
+            ) : (
+              <div className="text-white rounded-3xl p-6 flex flex-col justify-between shadow-lg h-full" style={{ backgroundColor: RED }}>
+                <div className="space-y-3">
+                  <h3 className="text-lg font-black">{emergencyTitle}</h3>
+                  <p className="text-xs font-semibold text-red-100">Early treatment can prevent</p>
+                  <ul className="space-y-1.5">
+                    {emergencyItems.map((item, idx) => (
+                      <li key={idx} className="flex items-center gap-2 text-sm font-bold">
+                        <Check className="w-4 h-4 shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <a
+                  href={`tel:${phoneTel}`}
+                  className="mt-5 bg-white font-black text-xs px-4 py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-red-50 transition"
+                  style={{ color: RED }}
+                >
+                  <Phone className="w-4 h-4" />
+                  {ctaLabel}: {phoneDisplay}
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -420,32 +451,44 @@ const RESULTS_COLS: Record<number, string> = {
   2: 'md:grid-cols-2', 3: 'md:grid-cols-3', 4: 'md:grid-cols-4', 5: 'md:grid-cols-5',
 };
 
-export function RealResultsRow({ title, items }: { title: string; items: ResultItem[] }) {
+export function RealResultsRow({ title, items, bannerImage }: { title: string; items?: ResultItem[]; bannerImage?: string }) {
   return (
     <section className="py-14 bg-[#F7F9FC]">
       <div className="max-w-[1400px] mx-auto px-4">
         <h2 className="text-center text-lg md:text-xl font-heading font-black mb-8 tracking-wide" style={{ color: NAVY_LIGHT }}>
           {title}
         </h2>
-        <div className={`grid grid-cols-2 ${RESULTS_COLS[Math.min(items.length, 5)] || 'md:grid-cols-5'} gap-4`}>
-          {items.map((item, idx) => (
-            <div key={idx} className="bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm">
-              <div className="grid grid-cols-2">
-                <div className="relative aspect-square">
-                  <Image src={item.before} alt={`${item.label} before`} fill className="object-cover" sizes="150px" />
+        {bannerImage ? (
+          <div className="relative w-full aspect-[2/1] sm:aspect-[2.4/1] md:aspect-[3/1] max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-lg border border-slate-200 bg-white">
+            <Image
+              src={bannerImage}
+              alt={title}
+              fill
+              className="object-contain p-2"
+              sizes="(max-width: 1200px) 100vw, 1200px"
+            />
+          </div>
+        ) : items && items.length > 0 ? (
+          <div className={`grid grid-cols-2 ${RESULTS_COLS[Math.min(items.length, 5)] || 'md:grid-cols-5'} gap-4`}>
+            {items.map((item, idx) => (
+              <div key={idx} className="bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm">
+                <div className="grid grid-cols-2">
+                  <div className="relative aspect-square">
+                    <Image src={item.before} alt={`${item.label} before`} fill className="object-cover" sizes="150px" />
+                  </div>
+                  <div className="relative aspect-square">
+                    <Image src={item.after} alt={`${item.label} after`} fill className="object-cover" sizes="150px" />
+                  </div>
                 </div>
-                <div className="relative aspect-square">
-                  <Image src={item.after} alt={`${item.label} after`} fill className="object-cover" sizes="150px" />
+                <div className="flex text-[9px] font-bold text-center">
+                  <span className="w-1/2 py-1 bg-slate-700 text-white">Before</span>
+                  <span className="w-1/2 py-1" style={{ backgroundColor: NAVY_LIGHT, color: 'white' }}>After</span>
                 </div>
+                <p className="text-center text-xs font-extrabold py-2 text-slate-800">{item.label}</p>
               </div>
-              <div className="flex text-[9px] font-bold text-center">
-                <span className="w-1/2 py-1 bg-slate-700 text-white">Before</span>
-                <span className="w-1/2 py-1" style={{ backgroundColor: NAVY_LIGHT, color: 'white' }}>After</span>
-              </div>
-              <p className="text-center text-xs font-extrabold py-2 text-slate-800">{item.label}</p>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        ) : null}
       </div>
     </section>
   );
@@ -591,10 +634,17 @@ export function MiniFAQList({ faqs }: { faqs: { question: string; answer?: strin
   return (
     <div className="space-y-2.5">
       {faqs.map((faq, idx) => (
-        <div key={idx} className="bg-white border border-slate-150 rounded-xl px-4 py-3.5 flex items-center justify-between gap-3 shadow-sm">
-          <span className="text-xs md:text-sm font-bold text-slate-800">{faq.question}</span>
-          <Plus className="w-4 h-4 shrink-0" style={{ color: NAVY_LIGHT }} />
-        </div>
+        <details key={idx} className="group bg-white border border-slate-150 rounded-xl px-4 py-3.5 shadow-sm transition-all">
+          <summary className="flex items-center justify-between gap-3 cursor-pointer list-none select-none">
+            <span className="text-xs md:text-sm font-bold text-slate-800">{faq.question}</span>
+            <ChevronDown className="w-4 h-4 shrink-0 transition-transform duration-200 group-open:rotate-180" style={{ color: NAVY_LIGHT }} />
+          </summary>
+          {faq.answer && (
+            <p className="mt-2.5 pt-2.5 border-t border-slate-100 text-xs md:text-sm text-slate-600 leading-relaxed">
+              {faq.answer}
+            </p>
+          )}
+        </details>
       ))}
     </div>
   );
@@ -614,7 +664,7 @@ export function FaqReviewsCta({
   phoneDisplay,
   phoneTel,
 }: {
-  faqs: { question: string }[];
+  faqs: { question: string; answer?: string }[];
   reviews: ReviewSnippet[];
   ctaTitle: string;
   ctaDesc: string;
@@ -724,7 +774,7 @@ export function LocationsSection({ locations, email }: { locations: LocationInfo
 
 // ---------- Comparison table ----------
 
-export interface ComparisonRow { feature: string; main: string; alt: string; alt2?: string }
+export interface ComparisonRow { feature: string; main: string; alt: string; alt2?: string; opt2?: string }
 
 export function ComparisonTable({ title, headers, rows }: { title: string; headers: string[]; rows: ComparisonRow[] }) {
   return (
@@ -747,7 +797,9 @@ export function ComparisonTable({ title, headers, rows }: { title: string; heade
                 <td className="px-3.5 py-3 font-black text-slate-800">{row.feature}</td>
                 <td className="px-3.5 py-3 text-center font-extrabold bg-blue-50/20" style={{ color: NAVY_LIGHT }}>{row.main}</td>
                 <td className="px-3.5 py-3 text-center font-semibold text-slate-500">{row.alt}</td>
-                {row.alt2 && <td className="px-3.5 py-3 text-center font-semibold text-slate-500">{row.alt2}</td>}
+                {(row.alt2 || row.opt2) && (
+                  <td className="px-3.5 py-3 text-center font-semibold text-slate-500">{row.alt2 || row.opt2}</td>
+                )}
               </tr>
             ))}
           </tbody>

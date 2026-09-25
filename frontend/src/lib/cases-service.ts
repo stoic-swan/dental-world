@@ -45,16 +45,42 @@ const DEFAULT_CASES = [
     isFeatured: true,
     order: 4,
   },
+  {
+    title: 'Orthodontic Braces Alignment',
+    category: 'Braces',
+    beforeImage: '/images/aug2026/braces_before_after_hd.png',
+    afterImage: '/images/aug2026/braces_before_after_hd.png',
+    isFeatured: true,
+    order: 5,
+  },
+  {
+    title: 'Microscopic Root Canal Therapy',
+    category: 'Root Canal',
+    beforeImage: '/images/aug2026/rct_before_after_hd.png',
+    afterImage: '/images/aug2026/rct_before_after_hd.png',
+    isFeatured: true,
+    order: 6,
+  },
+  {
+    title: 'Surgical Wisdom Tooth Extraction',
+    category: 'Oral Surgery',
+    beforeImage: '/images/aug2026/wisdom_tooth_before_after_hd.png',
+    afterImage: '/images/aug2026/wisdom_tooth_before_after_hd.png',
+    isFeatured: true,
+    order: 7,
+  },
 ];
 
 /**
- * Seed initial default Before & After cases if database table is empty.
+ * Seed initial default Before & After cases if database table is missing them.
  */
 export async function seedInitialCasesIfEmpty() {
   try {
-    const count = await prisma.beforeAfterCase.count();
-    if (count === 0) {
-      for (const item of DEFAULT_CASES) {
+    for (const item of DEFAULT_CASES) {
+      const existing = await prisma.beforeAfterCase.findFirst({
+        where: { title: item.title },
+      });
+      if (!existing) {
         await prisma.beforeAfterCase.create({
           data: item,
         });

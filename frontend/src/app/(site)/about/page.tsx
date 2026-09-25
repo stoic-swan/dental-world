@@ -64,6 +64,25 @@ export default async function AboutPage() {
         </div>
       </section>
 
+      {/* Comprehensive Care Under One Roof Infographic Banner */}
+      <section className="py-8 bg-slate-50 border-y border-slate-200/60">
+        <div className="section-container max-w-5xl">
+          <div className="text-center mb-8">
+            <span className="text-xs font-bold text-brand uppercase tracking-wider">Multi-Specialty Center</span>
+            <h3 className="text-2xl md:text-3xl font-heading font-black text-slate-900 mt-1">Complete Dental Care Under One Roof</h3>
+          </div>
+          <div className="rounded-3xl overflow-hidden border border-slate-200 shadow-xl bg-white p-3 md:p-6">
+            <Image
+              src="/images/aug2026/about_us_comprehensive_care.png"
+              alt="Dental World Comprehensive Dental Care Under One Roof"
+              width={1200}
+              height={630}
+              className="w-full h-auto rounded-2xl object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-brand-light/30">
         <div className="section-container max-w-6xl">
           <div className="text-center mb-16">

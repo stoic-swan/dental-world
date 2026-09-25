@@ -1017,7 +1017,7 @@ const treatmentsInfo: Record<string, {
     tagline: 'STOP GUM BLEEDING. SAVE YOUR BONES.',
     subtitle: 'Laser Flap. Safe Root Planing.',
     techStat: 'Laser Periodontal Care',
-    heroImage: '/images/gum diseases/Gum disease hero 1.png',
+    heroImage: '/images/aug2026/bleeding_gums_hero.png',
     features: [
       { title: 'Bleeding Cessation', desc: 'Stops bleeding gums immediately' },
       { title: 'Pocket Reduction', desc: 'Treats deep bacterial pockets' },
@@ -1062,7 +1062,7 @@ const treatmentsInfo: Record<string, {
       { title: 'Biolase Dental Laser', desc: 'Highly sterile treatment' },
       { title: 'High-magnification loupes', desc: 'Precise surgical execution' }
     ],
-    beforeAfterImage: '/images/before and after/Bleeding Gums-Flap Surgery Laser before and after.jpeg',
+    beforeAfterImage: '/images/aug2026/gum_disease_before_after_infographic.png',
     testimonialText: 'My gums stopped bleeding completely and my teeth feel solid now after my flap surgery.',
     testimonialAuthor: 'Venkatesh M., Pragathi Nagar',
     faqs: [
@@ -1561,7 +1561,7 @@ const treatmentsInfo: Record<string, {
       { title: '3D Virtual Surgical Planning', desc: 'Simulate results before surgery' },
       { title: 'Integrated Ortho-Surgical Care', desc: 'Seamless coordination' }
     ],
-    beforeAfterImage: '/images/before and after/Genioplasty before and after.jpeg',
+    beforeAfterImage: '/images/aug2026/jaw_surgery_orthognathic_infographic.png',
     costImage: '/images/new images/Treatments Theme Images/Jaw Surgery.png',
     testimonialText: 'The surgery completely aligned my jaw profile and cured my chronic TMJ joint headaches.',
     testimonialAuthor: 'Deepak R., Pragathi Nagar',
@@ -1628,59 +1628,64 @@ const treatmentsInfo: Record<string, {
     ]
   },
   'mouth-ulcers': {
-    tagline: 'INSTANT ULCER PAIN RELIEF.',
-    subtitle: 'Laser Photobiomodulation. Fast Sore Healing.',
-    techStat: 'Low-Level Laser Cauterization',
+    tagline: 'INSTANT ULCER PAIN RELIEF & ORAL LESION SCREENING.',
+    subtitle: 'Laser Photobiomodulation. Biopsy & Non-Healing Ulcer Care.',
+    techStat: 'Soft-Tissue Laser & Histopathology',
     heroImage: '/images/new images/Treatments Theme Images/Mouth Ulcers.png',
     features: [
-      { title: 'Instant Pain Block', desc: 'Numbs ulcer nerves in 60 seconds' },
-      { title: 'Cuts Healing Time', desc: 'Accelerates sore tissue closure' },
-      { title: 'Painless Non-contact Laser', desc: 'Laser tip never touches the sore' },
-      { title: 'Prevents Sore Recurrence', desc: 'Sterilizes local sore boundaries' }
+      { title: 'Instant Pain Block', desc: 'Numbs ulcer nerves in 60 seconds with diode laser' },
+      { title: 'Accelerated Healing', desc: 'Photobiomodulation cuts healing time by 70%' },
+      { title: 'Red & White Lesion Screening', desc: 'Specialized diagnosis of Leukoplakia & Erythroplakia' },
+      { title: 'Biopsy for Non-Healing Ulcers', desc: 'Histopathology for any ulcer persisting >2 weeks' }
     ],
-    symptoms: ['Painful Canker Sores', 'Difficulty Swallowing', 'Red Cheek Sores', 'Burning Gums', 'Sharp Tooth Rubbing'],
-    whatIsTitle: 'WHAT IS LASER MOUTH ULCER TREATMENT?',
-    whatIsText1: "Mouth ulcers (aphthous ulcers) are painful spots that make talking, eating, and drinking hot liquids unbearable. While topical gels take 10-14 days to heal them, low-level laser therapy provides relief in seconds.",
-    whatIsText2: "The dental laser delivers light energy directly to the ulcer. This stimulates cellular healing, destroys bacteria, and temporarily de-sensitizes local nerve endings, allowing you to eat comfortably immediately after the treatment.",
-    whatIsNote: "The procedure is completely non-contact, quiet, and requires zero injections.",
+    symptoms: ['Painful Canker Sores (Aphthous)', 'Ulcers Lasting >2 Weeks', 'Non-Wipeable White Patches (Leukoplakia)', 'Velvety Red Patches (Erythroplakia)', 'Painless Firm Induration', 'Difficulty Swallowing or Chewing'],
+    whatIsTitle: 'CLINICAL CARE FOR MOUTH ULCERS & ORAL LESIONS',
+    whatIsText1: "Mouth ulcers range from common painful aphthous canker sores to chronic non-healing lesions that demand urgent medical attention. For acute canker sores, advanced low-level diode laser therapy desensitizes nerve endings in seconds and accelerates tissue healing without needles or medication.",
+    whatIsText2: "Crucially, any mouth ulcer, firm lump, or red/white oral lesion (Leukoplakia, Erythroplakia, Oral Lichen Planus) that persists beyond 2 weeks must be clinically evaluated. Our oral medicine specialists provide fluorescent visual screening, toluidine blue testing, and diagnostic punch biopsies to rule out dysplasia or early malignancy.",
+    whatIsNote: "Never ignore a painless ulcer or lesion persisting over 14 days. Early diagnosis guarantees optimal treatment outcomes.",
     howItWorksSteps: [
-      { step: 1, title: 'Clean', desc: 'Sore is gently isolated', icon: 'stethoscope' },
-      { step: 2, title: 'Laser Hover', desc: 'Laser beam points at the ulcer', icon: 'tooth' },
-      { step: 3, title: 'De-sensitize', desc: 'Nerve endings are neutralized', icon: 'clean' },
-      { step: 4, title: 'Heal', desc: 'Tissue regeneration starts', icon: 'shield' }
+      { step: 1, title: 'Clinical Evaluation', desc: 'Visual & palpation examination of ulcer margins', icon: 'stethoscope' },
+      { step: 2, title: 'Laser Phototherapy', desc: 'Non-contact diode beam eliminates ulcer pain', icon: 'clean' },
+      { step: 3, title: 'Lesion Staining/Biopsy', desc: 'Tissue testing for ulcers lasting >14 days', icon: 'tooth' },
+      { step: 4, title: 'Targeted Management', desc: 'Vitamin therapy, sharp tooth smoothing, recovery', icon: 'shield' }
     ],
-    howItWorksSummary: 'Laser energy de-sensitizes localized nerve endings around the canker sore. In a single session, the low-power laser tip is scanned over the ulcer for 90 seconds. Healing factors are activated, sealing the sore for quick recovery.',
+    howItWorksSummary: 'For painful canker sores, low-level laser light is focused over the lesion for 90 seconds, sealing micro-nerve endings and boosting cellular repair. For chronic or suspicious white/red lesions, a minimally invasive biopsy under gentle local anesthesia provides a definitive histopathological diagnosis.',
     processSteps: [
-      { step: 1, title: 'Ulcer Isolation & Cleanse', desc: '', icon: 'stethoscope' },
-      { step: 2, title: 'Goggles Protection Placement', desc: '', icon: 'tooth' },
-      { step: 3, title: 'Laser Cauterization Scanning', desc: '', icon: 'clean' },
-      { step: 4, title: 'Soothing Topical Gel Finish', desc: '', icon: 'shield' }
+      { step: 1, title: 'Comprehensive Oral Mucosal Exam', desc: '', icon: 'stethoscope' },
+      { step: 2, title: 'Laser Nerve Desensitization', desc: '', icon: 'clean' },
+      { step: 3, title: 'Incisional / Punch Biopsy (If >2 Wks)', desc: '', icon: 'tooth' },
+      { step: 4, title: 'Histopathology & Nutritional Support', desc: '', icon: 'shield' }
     ],
     types: [
-      { title: 'Laser Aphthous Therapy', desc: 'Direct treatment of painful sores.' },
-      { title: 'Sharp Tooth Contouring', desc: 'Smooves sharp tooth margins causing recurring cheek sores.' }
+      { title: 'Laser Aphthous Cauterization', desc: 'Instant pain relief and rapid epithelial healing for canker sores.' },
+      { title: 'Chronic Non-Healing Ulcer Protocol', desc: 'Workup for ulcers lasting over 14 days to exclude precancerous changes.' },
+      { title: 'Precancerous Lesion Management', desc: 'Monitoring and excision of Leukoplakia, Erythroplakia, and Lichen Planus.' },
+      { title: 'Sharp Tooth Contouring (Coronoplasty)', desc: 'Smoothing traumatic sharp cusps causing chronic mechanical ulcers.' }
     ],
     startingCost: '₹1,000*',
-    costPoints: ['Instant Relief Guaranteed', 'Takes Under 5 Minutes', 'Anti-inflammatory Care Included'],
-    costDisclaimer: '*Price covers laser cauterization and post-op healing gels.',
-    comparisonTitle: 'LASER vs SALTS/CREAMS',
-    comparisonHeader: ['LASER SCAN', 'OVER THE COUNTER GELS', 'SALT WATER'],
+    costPoints: ['Instant Relief Guaranteed', 'Takes Under 5 Minutes', 'Oral Cancer Screening Included'],
+    costDisclaimer: '*Laser treatment starts at ₹1,000. Biopsy and histopathology charges depend on lesion size and lab testing.',
+    comparisonTitle: 'ADVANCED CARE vs HOME REMEDIES',
+    comparisonHeader: ['CLINICAL PROTOCOL', 'OVER-THE-COUNTER GELS', 'IGNORING / HOME REMEDY'],
     comparisonRows: [
-      { feature: 'Instant Pain Block', main: 'check', opt1: 'cross', opt2: 'cross' },
-      { feature: 'Heals in 24-48 Hours', main: 'check', opt1: 'cross', opt2: 'cross' },
-      { feature: 'Zero Burning Sensation', main: 'check', opt1: 'cross', opt2: 'cross' }
+      { feature: 'Instant Pain Elimination', main: 'check', opt1: 'cross', opt2: 'cross' },
+      { feature: 'Screens Precancerous Lesions', main: 'check', opt1: 'cross', opt2: 'cross' },
+      { feature: 'Definitive Biopsy Verification', main: 'check', opt1: 'cross', opt2: 'cross' },
+      { feature: 'Resolves Recurrence Triggers', main: 'check', opt1: 'cross', opt2: 'cross' }
     ],
     whyChooseCards: [
-      { title: 'Diode Low-Energy Laser', desc: 'Non-burning light therapy' },
-      { title: 'Instant Comfort Check', desc: 'Walk out pain-free' },
-      { title: 'Ulcer Preventive Evaluation', desc: 'Addresses systemic vitamins' }
+      { title: 'Oral Medicine & Surgery Experts', desc: 'Specialized diagnosis of mucosal lesions' },
+      { title: 'Advanced Diode Laser System', desc: 'Non-contact, painless healing stimulation' },
+      { title: 'Certified Histopathology Tie-ups', desc: 'Prompt and accurate biopsy reports' }
     ],
     costImage: '/images/new images/Treatments Theme Images/Mouth Ulcers.png',
-    testimonialText: 'I couldn\'t speak due to a huge ulcer. The laser took 1 minute and the pain vanished completely!',
+    testimonialText: 'I had an ulcer on the side of my tongue that wouldn\'t heal for 3 weeks. Dr. Sneha and the team did a laser treatment and a biopsy that gave me total clarity and peace of mind.',
     testimonialAuthor: 'Divya K., Pragathi Nagar',
     faqs: [
-      { question: 'Does the laser burn my cheek?', answer: 'No. The laser uses cold-pulse biostimulation. You will only feel a warm, comforting sensation.' },
-      { question: 'Why do I get recurring ulcers?', answer: 'Recurring ulcers can be triggered by stress, vitamin B12 deficiencies, sharp tooth margins, or acidic foods.' }
+      { question: 'When is a mouth ulcer considered dangerous?', answer: 'Any mouth ulcer that does not heal within 10 to 14 days, is painless, feels firm or indurated, or is accompanied by red/white patches, difficulty swallowing, or swollen neck lymph nodes requires immediate professional evaluation and a biopsy.' },
+      { question: 'Does laser mouth ulcer treatment hurt?', answer: 'No. The laser uses cold-pulse biostimulation and does not even touch the ulcer directly. Patients feel a soothing warm sensation followed by immediate pain relief.' },
+      { question: 'What is Leukoplakia and Erythroplakia?', answer: 'Leukoplakia appears as a white patch and Erythroplakia as a velvety red patch inside the mouth that cannot be scraped off. Both are potential precancerous conditions frequently linked to tobacco or chronic irritation that require biopsy and close monitoring.' },
+      { question: 'Why do I get frequent recurrent mouth ulcers?', answer: 'Frequent aphthous ulcers are commonly caused by stress, nutritional deficiencies (Vitamin B12, Iron, Folic Acid), sharp dental restorations rubbing the cheek, or underlying gastrointestinal conditions. We perform a full nutritional and oral evaluation to identify the root cause.' }
     ]
   },
   'preventive-dentistry': {
@@ -1787,7 +1792,7 @@ const doctorDetails: Record<string, {
     experience: '14+ Years Experience',
     qualifications: ['BDS', 'MDS Orthodontics & Dentofacial Orthodontics'],
     certifications: [
-      'Invisalign Gold Certified Provider',
+      'Invisalign Platinum Certified Provider',
       'Advanced Self-Ligating Braces Training',
       'Clear Aligners Specialist'
     ],
@@ -1801,7 +1806,7 @@ const doctorDetails: Record<string, {
     experience: '14+ Years Experience',
     qualifications: ['BDS', 'MDS Orthodontics & Dentofacial Orthodontics'],
     certifications: [
-      'Invisalign Gold Certified Provider',
+      'Invisalign Platinum Certified Provider',
       'Advanced Self-Ligating Braces Training',
       'Clear Aligners Specialist'
     ],

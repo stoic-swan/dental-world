@@ -24,8 +24,8 @@ export default function DenturesPage({ branch, locations, whatsappUrl }: {
         subtitle="Bachupally & Pragathi Nagar, Hyderabad"
         desc="Rediscover the joy of eating, speaking and smiling with custom-made dentures designed for perfect comfort, natural look and long-lasting performance."
         bullets={['Natural Look & Feel', 'Comfortable & Secure Fit', 'Advanced Digital Technology', 'Affordable Denture Care']}
-        image="/images/new images/Dentures 2.jpeg"
-        imageAlt="Denture prosthetic close-up"
+        image="/images/aug2026/dentures_hero_couple.png"
+        imageAlt="Happy older couple smiling with comfortable dentures"
         bookLabel="Book Your Free Consultation"
         phoneDisplay={branch.phone.display}
         phoneTel={branch.phone.tel}
@@ -106,11 +106,26 @@ export default function DenturesPage({ branch, locations, whatsappUrl }: {
           <div>
             <h3 className="text-lg font-heading font-black mb-4" style={{ color: NAVY }}>Frequently Asked Questions</h3>
             <MiniFAQList faqs={[
-              { question: 'What are dentures?' },
-              { question: 'Are dentures painful?' },
-              { question: 'How do I clean my dentures at home?' },
-              { question: 'Can dentures be fitted to receding gums?' },
-              { question: 'Are dentures permanent or removable?' },
+              {
+                question: 'What are dentures?',
+                answer: 'Dentures are custom-fabricated prosthetic appliances designed to replace missing teeth and surrounding gum tissues, restoring chewing, speech, and facial aesthetics.',
+              },
+              {
+                question: 'Are dentures painful?',
+                answer: 'New dentures may cause slight initial gum soreness as mouth muscles adapt. Custom adjustments and soft liners quickly relieve any pressure spots.',
+              },
+              {
+                question: 'How do I clean my dentures at home?',
+                answer: 'Rinse after eating, brush daily with a soft denture brush and non-abrasive cleanser, and soak overnight in water or a mild denture cleaning solution.',
+              },
+              {
+                question: 'Can dentures be fitted to receding gums?',
+                answer: 'Yes. Dentures are precision molded to fit existing ridge contours, and relining or implant-assisted retention (overdentures) can provide rock-solid stability even with bone loss.',
+              },
+              {
+                question: 'Are dentures permanent or removable?',
+                answer: 'Traditional full and partial dentures are removable. However, implant-supported hybrid dentures (like All-on-4 or All-on-6) are permanently screwed into titanium fixtures for fixed teeth stability.',
+              },
             ]} />
             <Link href="/faq" className="inline-block mt-4 text-white text-xs font-black px-5 py-2.5 rounded-lg" style={{ backgroundColor: NAVY }}>
               View All FAQs

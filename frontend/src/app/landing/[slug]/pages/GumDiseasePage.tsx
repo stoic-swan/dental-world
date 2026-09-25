@@ -23,8 +23,8 @@ export default function GumDiseasePage({ branch, locations, whatsappUrl, mediaMa
         subtitle="Healthy Gums. Stronger Smile. Better You."
         desc="Dental World offers expert gum disease treatment, advanced periodontal care, and personalized solutions to protect your oral health."
         bullets={['Expert Periodontists', 'Minimally Invasive Care', 'Painless Laser Treatment', 'Long Lasting Results', 'Advanced Technology', 'Affordable & Safe']}
-        image={mediaMap?.hero_gum_care || '/images/gum diseases/Gum disease hero 1.png'}
-        imageAlt="Woman pointing to her healthy smile"
+        image={mediaMap?.hero_gum_care || '/images/aug2026/bleeding_gums_hero.png'}
+        imageAlt="Periodontal Care and Gum Health Specialist"
         bookLabel="Book Your Appointment"
         phoneDisplay={branch.phone.display}
         phoneTel={branch.phone.tel}
@@ -72,6 +72,7 @@ export default function GumDiseasePage({ branch, locations, whatsappUrl, mediaMa
         ]}
         emergencyTitle="Don't Ignore Bleeding Gums!"
         emergencyItems={['Tooth loss', 'Bone loss', 'Bad breath', 'Serious infections']}
+        emergencyImage="/images/aug2026/bleeding_gums_emergency_card.jpeg"
         ctaLabel="Book Emergency Appointment"
         phoneDisplay={branch.phone.display}
         phoneTel={branch.phone.tel}
@@ -79,6 +80,7 @@ export default function GumDiseasePage({ branch, locations, whatsappUrl, mediaMa
 
       <RealResultsRow
         title="REAL RESULTS. REAL TRANSFORMATIONS."
+        bannerImage="/images/aug2026/bleeding_gums_real_results_grid.png"
         items={[
           { label: 'Bleeding Gums', before: '/images/gums_before.png', after: '/images/gums_after.png' },
           { label: 'Gum Swelling', before: '/images/gums_before.png', after: '/images/gums_after.png' },
@@ -141,12 +143,30 @@ export default function GumDiseasePage({ branch, locations, whatsappUrl, mediaMa
 
       <FaqReviewsCta
         faqs={[
-          { question: 'What causes gum disease?' },
-          { question: 'How do I know if I have gum disease?' },
-          { question: 'Is laser gum treatment better than regular treatment?' },
-          { question: 'Does gum treatment hurt?' },
-          { question: 'How long does gum treatment take to show results?' },
-          { question: 'Can gum disease cause tooth loss?' },
+          {
+            question: 'What causes bleeding gums?',
+            answer: 'The primary cause is plaque and tartar buildup along the gumline leading to gingivitis. Other causes include aggressive brushing, hormonal fluctuations, vitamin C/K deficiencies, and systemic conditions.',
+          },
+          {
+            question: 'Can bleeding gums heal on their own?',
+            answer: 'Mild gingivitis can improve with diligent oral hygiene, but hardened calculus and deep bacterial pockets require professional scaling and root planing or laser therapy to fully resolve.',
+          },
+          {
+            question: 'Is laser gum treatment better than conventional surgery?',
+            answer: 'Yes, diode lasers offer minimally invasive bactericidal decontamination, pinpoint precision, significantly less bleeding, reduced post-operative discomfort, and faster tissue healing.',
+          },
+          {
+            question: 'Does gum treatment hurt?',
+            answer: 'No, procedures are performed under gentle local anesthesia and laser protocols minimize trauma to surrounding tissues, ensuring a virtually painless experience.',
+          },
+          {
+            question: 'How long does gum treatment take to show results?',
+            answer: 'Bleeding and swelling typically improve within 3 to 7 days post-treatment. Deep pockets and tissue reattachment continue healing over 4 to 8 weeks with proper maintenance.',
+          },
+          {
+            question: 'Can untreated gum disease cause tooth loss?',
+            answer: 'Yes. If gingivitis advances to periodontitis, supporting bone and periodontal ligaments are destroyed, causing mobility and eventually tooth loss if not intervened.',
+          },
         ]}
         reviews={[
           { name: 'Priya S.', text: 'My bleeding gums stopped after laser treatment. The doctors are amazing and very caring!' },

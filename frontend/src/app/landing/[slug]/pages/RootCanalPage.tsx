@@ -32,7 +32,7 @@ export default function RootCanalPage({ branch, locations, whatsappUrl, mediaMap
         bookLabel="Request Pain-Free RCT"
         phoneDisplay={branch.phone.display}
         phoneTel={branch.phone.tel}
-        beforeAfter={{ before: '/images/cases/root_canal_before.png', after: '/images/cases/root_canal_after.png' }}
+        beforeAfter={{ before: '/images/aug2026/rct_inset_before.png', after: '/images/aug2026/rct_inset_after.png' }}
       />
 
       <StatsBar items={[
@@ -46,20 +46,20 @@ export default function RootCanalPage({ branch, locations, whatsappUrl, mediaMap
         title="Advanced Root Canal Technology"
         cols={4}
         items={[
-          { icon: <Activity className="w-7 h-7" />, title: 'Rotary Endodontics', desc: 'Electrically driven tools clean and shape canals faster and smoother.' },
-          { icon: <ScanLine className="w-7 h-7" />, title: 'Digital Apex Locators', desc: 'Verifies thorough disinfection to the exact canal tip.' },
-          { icon: <Sparkles className="w-7 h-7" />, title: 'Laser Disinfection', desc: 'Sterilizes hard-to-reach areas, achieving 99.9% sterility.' },
-          { icon: <ShieldCheck className="w-7 h-7" />, title: 'Strict Sterilization', desc: '100% sterile tools using Class-B autoclave sterilizers.' },
+          { image: '/images/aug2026/icons/rct_rotary_endodontics.png', title: 'Rotary Endodontics', desc: 'Electrically driven tools clean and shape canals faster, smoother, and with minimal discomfort.' },
+          { image: '/images/aug2026/icons/rct_digital_apex_locator.png', title: 'Digital Apex Locators', desc: 'Verifies thorough instrumentation and disinfection to the exact anatomical canal tip.' },
+          { image: '/images/aug2026/icons/rct_laser_disinfection.png', title: 'Laser Disinfection', desc: 'Sterilizes micro-canals and lateral branches, eliminating up to 99.9% of bacteria.' },
+          { image: '/images/aug2026/icons/rct_digital_xray.png', title: 'Digital RVG X-Rays', desc: 'Ultra-low radiation high-resolution digital imaging for real-time canal visualization.' },
         ]}
       />
 
       <HowItWorksFlow
         title="How Root Canal Works"
         steps={[
-          { icon: <ScanLine className="w-6 h-6" />, title: 'Digital X-ray', desc: 'Assess infection depth' },
+          { image: '/images/aug2026/icons/rct_digital_xray.png', title: 'Digital X-ray', desc: 'Assess infection depth' },
           { icon: <ShieldCheck className="w-6 h-6" />, title: 'Precision Numbing', desc: 'Completely painless' },
-          { icon: <Activity className="w-6 h-6" />, title: 'Pulp Removal', desc: 'Infected tissue removed' },
-          { icon: <Sparkles className="w-6 h-6" />, title: 'Laser Disinfection', desc: 'Sterilizes root canals' },
+          { image: '/images/aug2026/icons/rct_rotary_endodontics.png', title: 'Pulp Removal', desc: 'Infected tissue removed' },
+          { image: '/images/aug2026/icons/rct_laser_disinfection.png', title: 'Laser Disinfection', desc: 'Sterilizes root canals' },
           { icon: <CheckCircle2 className="w-6 h-6" />, title: 'Hermetic Sealing', desc: 'Prevents bacterial entry' },
           { icon: <Award className="w-6 h-6" />, title: 'Tooth Restoration', desc: 'Permanent crown placed' },
         ]}
@@ -119,7 +119,7 @@ export default function RootCanalPage({ branch, locations, whatsappUrl, mediaMap
         <div className="max-w-[1400px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div>
             <h3 className="text-lg font-heading font-black mb-4" style={{ color: NAVY }}>Frequently Asked Questions</h3>
-            <MiniFAQList faqs={data.faqs.map(f => ({ question: f.question }))} />
+            <MiniFAQList faqs={data.faqs.map(f => ({ question: f.question, answer: f.answer }))} />
             <Link href="/faq" className="inline-block mt-4 text-white text-xs font-black px-5 py-2.5 rounded-lg" style={{ backgroundColor: NAVY }}>
               View All FAQs
             </Link>

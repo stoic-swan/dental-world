@@ -28,7 +28,7 @@ export default function BracesPage({ branch, locations, whatsappUrl }: {
         bookLabel="Book Your Braces Consultation"
         phoneDisplay={branch.phone.display}
         phoneTel={branch.phone.tel}
-        beforeAfter={{ before: '/images/cases/braces_before.png', after: '/images/cases/braces_after.png' }}
+        beforeAfter={{ before: '/images/aug2026/braces_inset_before.png', after: '/images/aug2026/braces_inset_after.png' }}
       />
 
       <StatsBar items={[
@@ -96,13 +96,34 @@ export default function BracesPage({ branch, locations, whatsappUrl }: {
           <div>
             <h3 className="text-lg font-heading font-black mb-4" style={{ color: NAVY }}>Frequently Asked Questions</h3>
             <MiniFAQList faqs={[
-              { question: 'What are dental braces?' },
-              { question: 'Which type of braces is best for me?' },
-              { question: 'How much do braces cost in Hyderabad?' },
-              { question: 'How long does braces treatment take?' },
-              { question: 'Are invisible braces effective?' },
-              { question: 'Do braces treatment cause pain?' },
-              { question: 'Can adults get braces?' },
+              {
+                question: 'What are dental braces?',
+                answer: 'Dental braces are orthodontic appliances designed to align, straighten, and correct misaligned teeth, crowded bites, gaps, and jaw discrepancies using steady gentle forces.',
+              },
+              {
+                question: 'Which type of braces is best for me?',
+                answer: 'Choice depends on aesthetic preference, malocclusion complexity, and lifestyle. Metal braces offer maximum durability, ceramic braces blend discreetly, and clear aligners provide virtually invisible removable comfort.',
+              },
+              {
+                question: 'How much do braces cost in Hyderabad?',
+                answer: 'Metal braces start from ₹25,000, ceramic braces from ₹35,000 to ₹55,000, and clear aligners range from ₹60,000 to ₹1,50,000+ depending on treatment complexity and brand.',
+              },
+              {
+                question: 'How long does braces treatment take?',
+                answer: 'Most comprehensive orthodontic treatments take between 12 to 24 months, with mild alignment cases taking as little as 6 to 9 months.',
+              },
+              {
+                question: 'Are invisible braces effective?',
+                answer: 'Yes, clear aligners are highly effective for treating mild-to-severe crowding, gaps, overbites, and crossbites when worn for the recommended 20-22 hours per day.',
+              },
+              {
+                question: 'Do braces cause pain?',
+                answer: 'You may feel mild tenderness or pressure for 2-4 days following initial placement and routine adjustments, which is easily managed with mild analgesics.',
+              },
+              {
+                question: 'Can adults get braces?',
+                answer: 'Absolutely. Healthy teeth can be moved at any age, and adult orthodontics is extremely common using discreet ceramic brackets or invisible aligners.',
+              },
             ]} />
             <Link href="/faq" className="inline-block mt-4 text-white text-xs font-black px-5 py-2.5 rounded-lg" style={{ backgroundColor: NAVY }}>
               View All FAQs

@@ -70,15 +70,19 @@ export default function WisdomToothPage({ branch, locations, whatsappUrl }: {
             Wisdom Tooth Extraction &ndash; Before &amp; After
           </h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <div className="border-2 border-slate-200 rounded-2xl overflow-hidden max-w-sm w-full">
-              <div className="px-4 py-2 text-sm font-black text-slate-800">Before Extraction <span className="text-slate-400 font-semibold">&middot; Impacted &amp; Inflamed</span></div>
-              <div className="relative aspect-video"><Image src="/images/cases/rct_xray_before.png" alt="Before wisdom tooth extraction" fill className="object-cover" sizes="400px" /></div>
+            <div className="border-2 border-slate-200 rounded-2xl overflow-hidden max-w-sm w-full shadow-sm">
+              <div className="px-4 py-2.5 bg-slate-50 text-sm font-black text-slate-800 border-b border-slate-200">Before Extraction <span className="text-slate-500 font-semibold">&middot; Impacted &amp; Inflamed</span></div>
+              <div className="relative aspect-video"><Image src="/images/aug2026/wisdom_tooth_before_card.png" alt="Before wisdom tooth extraction impacted tooth" fill className="object-cover" sizes="400px" /></div>
             </div>
             <ArrowRight className="w-6 h-6 shrink-0 hidden sm:block" style={{ color: NAVY_LIGHT }} />
-            <div className="border-2 border-emerald-200 rounded-2xl overflow-hidden max-w-sm w-full">
-              <div className="px-4 py-2 text-sm font-black text-emerald-700">After Extraction <span className="text-slate-400 font-semibold">&middot; Clean Healing Zone</span></div>
-              <div className="relative aspect-video"><Image src="/images/cases/rct_xray_after.png" alt="After wisdom tooth extraction" fill className="object-cover" sizes="400px" /></div>
+            <div className="border-2 border-emerald-300 rounded-2xl overflow-hidden max-w-sm w-full shadow-sm">
+              <div className="px-4 py-2.5 bg-emerald-50 text-sm font-black text-emerald-800 border-b border-emerald-200">After Extraction <span className="text-emerald-600 font-semibold">&middot; Clean Healed Socket</span></div>
+              <div className="relative aspect-video"><Image src="/images/aug2026/wisdom_tooth_after_card.png" alt="After wisdom tooth extraction healed socket" fill className="object-cover" sizes="400px" /></div>
             </div>
+          </div>
+
+          <div className="mt-8 max-w-2xl mx-auto rounded-2xl overflow-hidden border border-slate-200 shadow-md">
+            <Image src="/images/aug2026/wisdom_tooth_small_banner.png" alt="Wisdom Tooth Pain Relief Dental World" width={800} height={200} className="w-full h-auto object-cover" />
           </div>
         </div>
       </section>
@@ -119,10 +123,26 @@ export default function WisdomToothPage({ branch, locations, whatsappUrl }: {
 
       <FaqReviewsCta
         faqs={[
-          { question: 'Is wisdom tooth extraction painful?' },
-          { question: 'How long is the recovery after extraction?' },
-          { question: 'When is wisdom tooth removal necessary?' },
-          { question: 'What can I eat after extraction?' },
+          {
+            question: 'Is wisdom tooth extraction painful?',
+            answer: 'No. The procedure is performed under profound local anesthesia or sedation. You will feel pressure, but no sharp pain during the removal.',
+          },
+          {
+            question: 'How long is the recovery after extraction?',
+            answer: 'Initial soft tissue healing occurs within 3 to 7 days. Most patients resume regular work and activities within 48 to 72 hours.',
+          },
+          {
+            question: 'When is wisdom tooth removal necessary?',
+            answer: 'Removal is advised for impacted teeth, recurrent pericoronitis (gum swelling), damage/crowding to adjacent molars, cysts, or persistent severe pain.',
+          },
+          {
+            question: 'What can I eat after extraction?',
+            answer: 'Stick to soft, cool foods like smoothies, yogurts, soups, pudding, and khichdi for the first 48 hours. Avoid hot, spicy, or crunchy foods, and do not use a straw.',
+          },
+          {
+            question: 'How to prevent dry socket after extraction?',
+            answer: 'Avoid vigorous rinsing, spitting, or using straws for 24-48 hours. Do not smoke or consume alcohol, as negative oral pressure dislodges the vital protective blood clot.',
+          },
         ]}
         reviews={[
           { name: 'Priya S.', text: 'I had severe pain due to my wisdom tooth. Dr. Yousuf Qureshi explained everything clearly and the extraction was completely painless. Highly recommended!' },
